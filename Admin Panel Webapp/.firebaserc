@@ -1,0 +1,18 @@
+{
+  "projects": {
+    "default": "ctquestions-ac5f2"
+  },
+  "targets": {
+    "ctquestions-ac5f2": {
+      "hosting": {
+        "portal": [
+          "ctquestions-ac5f2"
+        ],
+        "baust-cse": [
+          "baust-cse"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

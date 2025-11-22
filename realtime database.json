@@ -1,0 +1,1131 @@
+{
+  "classAdmins": {
+    "Cvza7uBEurW2pHPa7vgq11MpENz2": {
+      "classId": "19th-batch-c",
+      "name": "MD JAHID HASAN"
+    }
+  },
+  "classes": {
+    "19th-batch-c": {
+      "calendarEvents": {
+        "-O_7aN69rfmvtFzGe-Yj": {
+          "date": "2026-01-12",
+          "description": "",
+          "title": "Result Publication",
+          "type": "notice"
+        },
+        "-O_7b7yHuEcPPHQ2gSOd": {
+          "date": "2025-12-14",
+          "description": "",
+          "title": "Final Examination start",
+          "type": "exam"
+        },
+        "-O_7bKxt1zZx1Hj-Ny8Z": {
+          "date": "2025-12-16",
+          "description": "",
+          "title": "Victory Day",
+          "type": "holiday"
+        },
+        "-O_7bk4aItmeIrf_FxSG": {
+          "date": "2025-12-25",
+          "description": "",
+          "title": "Chrismas Day",
+          "type": "holiday"
+        },
+        "-O_7cifukiGuE8bA1plu": {
+          "date": "2026-01-01",
+          "description": "",
+          "title": "Final Examination End",
+          "type": "exam"
+        },
+        "-O_IRaSpr0qYdGgbYlrr": {
+          "date": "2025-09-22",
+          "description": "Syllabus : OOP 4 Pillars: Inheritance , Polymorphism, Encapsulation, Abstraction",
+          "title": "CSE 2108 (OOP II Sessional) – Lab Test",
+          "type": "exam"
+        },
+        "-O_IRmAgUSwCn-AYnjm0": {
+          "date": "2025-09-23",
+          "description": "Syllabus: 1st lab → last lab",
+          "title": "CSE 2102 (DLD Sessional) – LAB Midterm",
+          "type": "exam"
+        },
+        "-O_ISViotuT3w-y8nuSX": {
+          "date": "2025-09-24",
+          "description": "Syllabus: Chemical Equilibrium",
+          "title": "Chemistry CT-2",
+          "type": "exam"
+        },
+        "-O_V6asuLxE9H3P4UB8Q": {
+          "date": "2025-09-21",
+          "description": "Syllabus: Searching, Sorting, Linked List *(and topics done after the previous Lab Test)",
+          "title": "CSE 2104 (DSA I Sessional) – Lab Test",
+          "type": "exam"
+        }
+      },
+      "className": "19th Batch - Section C",
+      "courseAdvisors": {
+        "-OZzUtSQdkBFArermdwS": {
+          "department": "CSE",
+          "designation": "Lecturer",
+          "email": "sabrina@baust.edu.bd",
+          "name": "Mst. Sabrina Zaman",
+          "phone": "01318049895"
+        }
+      },
+      "courses": {
+        "CHEM-2133": {
+          "assignments": {
+            "-OZz0ng65cSu4nfkRcbC": {
+              "name": "Assignment-1: Describe Rutherford Atomic Model with its limitation?",
+              "submissionDate": "14/08/2025"
+            }
+          },
+          "courseCode": "CHEM 2133",
+          "courseName": "Chemistry",
+          "ctQuestions": {
+            "CT1": "https://drive.google.com/file/d/1NC59WNagz5px8nwG5w8B482OOjV9BGR6/view",
+            "CT2": "",
+            "CT3": "",
+            "Midterm": ""
+          },
+          "teacherInfo": {
+            "department": "Art & Science",
+            "designation": "Associate Professor",
+            "name": "Dr. Kazi Mohammad Anamoul Haque",
+            "phone": "+8801312807977"
+          },
+          "type": "theory"
+        },
+        "CSE-2100": {
+          "courseCode": "CSE 2100",
+          "courseName": "Software Development Project I",
+          "labReports": {
+            "-O_V8QwtitVyM27zrc7x": {
+              "experimentDate": "21/08/2025",
+              "experimentName": "Proposal Lab Report",
+              "submissionDate": "21/09/2025"
+            }
+          },
+          "teacherInfo": {
+            "department": "CSE",
+            "designation": "Lecturer",
+            "name": "Shifa Tasmiah Tisha",
+            "phone": "01750391581"
+          },
+          "teacherInfo2": {
+            "department": "CSE",
+            "designation": "Lecturer",
+            "name": "Md. Maskur Al Shal Sabil",
+            "phone": "01783015123"
+          },
+          "type": "sessional"
+        },
+        "CSE-2101": {
+          "courseCode": "CSE 2101",
+          "courseName": "Digital Logic Design",
+          "ctQuestions": {
+            "CT1": "https://drive.google.com/file/d/1GII7d-62VFDNG26hpMfxjHwf5B5qdcEP/view",
+            "CT2": "",
+            "CT3": "",
+            "Midterm": ""
+          },
+          "resources": {
+            "-O_0vLnVBPEUWFnDFtua": {
+              "topic": "Google Classroom Link – [Saad Ahmed] Resources",
+              "url": "https://classroom.google.com/c/NzkxNjc4MTc1NDcx?cjc=6ahdzmmo"
+            },
+            "-O_0y3dczNa36BkhB8Pr": {
+              "topic": "Hand Book of Modern Digital Electronics by Moazzam & Shorif",
+              "url": "https://drive.google.com/file/d/1PDhsqAEDfUGVF1NzpMWr3anxKjPUINNV/view"
+            },
+            "-O_7S_6RN8RqP6NEXY_6": {
+              "topic": "All DLD Course Materials",
+              "url": "https://drive.google.com/drive/folders/1FfP1ox5u9ClCAYtRbr8rY7QiniUWwDI2"
+            }
+          },
+          "teacherInfo": {
+            "department": "CSE",
+            "designation": "Lecturer",
+            "name": "Saad Ahmed",
+            "phone": "01724407189"
+          },
+          "type": "theory"
+        },
+        "CSE-2102": {
+          "courseCode": "CSE 2102",
+          "courseName": "Digital Logic Design Sessional",
+          "labReports": {
+            "-O_7NzdBudRUc06NC_BB": {
+              "experimentDate": "12/08/2025",
+              "experimentName": "Study of the Logic Gates (AND, OR, NOT)",
+              "submissionDate": "19/08/2025"
+            },
+            "-O_7OCq9BHC0fFXPpqD6": {
+              "experimentDate": "19/08/2025",
+              "experimentName": "NAND & NOR Gate As Universal Gate",
+              "submissionDate": "26/08/2025"
+            },
+            "-O_7OZwHAETOXNAvSl7J": {
+              "experimentDate": "26/08/2025",
+              "experimentName": "Simplification of Logic Expressions",
+              "submissionDate": "02/09/2025"
+            },
+            "-O_7OuAIFJGXynCWQE7B": {
+              "experimentDate": "02/09/2025",
+              "experimentName": "Design and Implementation of Half Adder and Full Adder Circuits",
+              "submissionDate": "09/09/2025"
+            },
+            "-O_D7hyaN78qrtwtzTAZ": {
+              "experimentDate": "09/09/2025",
+              "experimentName": "Design and Implementation Half Subtractor and Full Subtractor",
+              "submissionDate": "16/09/2025"
+            },
+            "-O_ILdtKi0cOB5OZLbYI": {
+              "experimentDate": "16/09/2025",
+              "experimentName": "Design and Implementation of Code Converter (Binary to Gray Code & Gray to Binary Code))",
+              "submissionDate": "23/09/2025"
+            }
+          },
+          "teacherInfo": {
+            "department": "CSE",
+            "designation": "Lecturer",
+            "name": "Saad Ahmed",
+            "phone": "01724407189"
+          },
+          "teacherInfo2": {
+            "department": "CSE",
+            "designation": "Lab Technician",
+            "name": "Md. Masud Rana",
+            "phone": "01723181718"
+          },
+          "type": "sessional"
+        },
+        "CSE-2103": {
+          "courseCode": "CSE 2103",
+          "courseName": "Data Structures and Algorithm I",
+          "ctQuestions": {
+            "CT1": "https://drive.google.com/file/d/1hqra1_APdV5tcjyLOCDDrBAaxpwhVzX2/view",
+            "CT2": "",
+            "CT3": "",
+            "Midterm": ""
+          },
+          "resources": {
+            "-O_7Vy1J01BT0YJknRqN": {
+              "topic": "Google Classroom Link – [Zahim Sir] Resources",
+              "url": "https://drive.google.com/drive/folders/1zPS208zaai9vcUUF6STuoP_HZ2oq4M9J"
+            }
+          },
+          "teacherInfo": {
+            "department": "CSE",
+            "designation": "Lecturer",
+            "name": "Md Zahim Hassan",
+            "phone": "01736393334"
+          },
+          "type": "theory"
+        },
+        "CSE-2104": {
+          "courseCode": "CSE 2104",
+          "courseName": "Data Structures and Algorithm I Sessional",
+          "labReports": {
+            "-O_5cO_FSlu8ofLyEMPw": {
+              "experimentDate": "10/08/2025",
+              "experimentName": "Operation on Dynamic and Static Array (1D, 2D)",
+              "submissionDate": "17/08/2025"
+            },
+            "-O_5cyZAOgctISAlLV62": {
+              "experimentDate": "17/08/2025",
+              "experimentName": "Introduction to String Operation",
+              "submissionDate": "24/08/2025"
+            },
+            "-O_5ddYTKCq1XqK0G3fb": {
+              "experimentDate": "24/08/2025",
+              "experimentName": "Introduction to Linear Search and Binary Search",
+              "submissionDate": "31/08/2025"
+            },
+            "-O_5e4TZrWEn18m5hP4W": {
+              "experimentDate": "31/08/2025",
+              "experimentName": "Introduction to Sorting Algorithm",
+              "submissionDate": "07/09/2025"
+            },
+            "-O_5eKNjPsJKhu5vo8FH": {
+              "experimentDate": "07/09/2025",
+              "experimentName": "Singly Linked list and its Operations",
+              "submissionDate": "14/09/2025"
+            },
+            "-O_VGI9wWRag5aG0Rs8q": {
+              "experimentDate": "14/09/2025",
+              "experimentName": "Doubly Linked list and its Operations",
+              "submissionDate": "21/09/2025"
+            },
+            "-O_eZJc1UTiBn8szeqZb": {
+              "experimentDate": "21/09/2025",
+              "experimentName": "Introduction to Stack Data Structures",
+              "submissionDate": "12/10/2025"
+            }
+          },
+          "resources": {
+            "-O_eUrobmtGm9Y1djFvh": {
+              "topic": "DSA Lab Resources & Lab Code (Provide by Course Teacher)",
+              "url": "https://drive.google.com/drive/folders/19S2aV0RJbgoy-Mdq71ofybTcPXPAUAF5"
+            }
+          },
+          "teacherInfo": {
+            "department": "CSE",
+            "designation": "Lecturer",
+            "name": "Md Zahim Hassan",
+            "phone": "01736393334"
+          },
+          "teacherInfo2": {
+            "department": "CSE",
+            "designation": "Lecturer",
+            "name": "Abdullah Al Asif",
+            "phone": "01343132304; 01836218266"
+          },
+          "type": "sessional"
+        },
+        "CSE-2105": {
+          "assignments": {
+            "-O_7vhFL2sAkHKzm8oes": {
+              "name": "Statistics Assignment - 1",
+              "submissionDate": "15/09/25"
+            }
+          },
+          "courseCode": "CSE 2105",
+          "courseName": "Applied Statistics for Computer Science",
+          "ctQuestions": {
+            "CT1": "https://drive.google.com/file/d/1iDfqWwXpW8gz_2bSp0apzfIXsRF0oAzS/view",
+            "CT2": "",
+            "CT3": "",
+            "Midterm": ""
+          },
+          "resources": {
+            "-O_7tMfs42bEX8USM0Uu": {
+              "topic": "Statistics - Schaum's Outlines.",
+              "url": "https://drive.google.com/file/d/1BQgLsyb5FjU9g0lToisUXsXdDgQNI_N8/view"
+            },
+            "-O_7teFLXxA292lCPT6y": {
+              "topic": "Lecture Sheet 1",
+              "url": "https://drive.google.com/file/d/1dTpXhp6K_QlJ6CMe_1-ihfIri49jxiob/view"
+            },
+            "-O__xNlzDrYyCZ7UA42z": {
+              "topic": "Lecture Sheet 2",
+              "url": "https://drive.google.com/file/d/1Vt7yuqZG-UNMyoyqaZSSHOfYzl2gZrdk/view"
+            },
+            "-O__xYO_HqPENQO86ch-": {
+              "topic": "Lecture-02 (Probability & Bayes Theorem)",
+              "url": "https://drive.google.com/file/d/1tfIEm9UvTpjG7gniKLIumOHuHjUn155v/view"
+            }
+          },
+          "teacherInfo": {
+            "department": "CSE",
+            "designation": "Lecturer",
+            "name": "Md. Osama",
+            "phone": "01994177881"
+          },
+          "type": "theory"
+        },
+        "CSE-2108": {
+          "courseCode": "CSE 2108",
+          "courseName": "Object Oriented Programming Language II Sessional",
+          "labReports": {
+            "-O_75b1XoB6_1HwqyJJA": {
+              "experimentDate": "18/08/2025",
+              "experimentName": "Introduction to User Input, Conditional Statements, and Ternary Operator in Java",
+              "submissionDate": "25/08/2025"
+            },
+            "-O_7NcQYUhUNWNzBsZbE": {
+              "experimentDate": "25/08/2025",
+              "experimentName": "Introduction to String[] args, Switch, Loop (4 types), Array, and 2D Array in Java",
+              "submissionDate": "01/09/2025"
+            }
+          },
+          "teacherInfo": {
+            "department": "CSE",
+            "designation": "Lecturer",
+            "name": "Abdullah Al Asif",
+            "phone": "01343132304, 01836218266"
+          },
+          "type": "sessional"
+        },
+        "MATH-2145": {
+          "courseCode": "MATH 2145",
+          "courseName": "Vector Calculus, Linear Algebra and Complex Variable",
+          "ctQuestions": {
+            "CT1": "https://drive.google.com/file/d/19M3P9ufGH8eMbDi6R-zpIqX_t-WrpaHA/view",
+            "CT2": "",
+            "CT3": "",
+            "Midterm": ""
+          },
+          "teacherInfo": {
+            "department": "Art & Science",
+            "designation": "Assistant Professor",
+            "name": "Most. Ummey Kulsum",
+            "phone": "01723564965"
+          },
+          "type": "theory"
+        }
+      },
+      "groupLinks": {
+        "-OZzRygZN6CLCmQRWqcq": {
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg",
+          "name": "CSE 19th Batch unoffical (Section C)",
+          "type": "WhatsApp",
+          "url": "https://chat.whatsapp.com/JvYe1x4RxhDJBs6WKG5I80"
+        },
+        "-OZzSa-wGaZCuAgmLTSz": {
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg",
+          "name": "CSE 19th batch, Section C (CC Group)",
+          "type": "WhatsApp",
+          "url": "https://chat.whatsapp.com/JLaAlvBzWb2AMZz6BtfXj1"
+        },
+        "-OZzT00A2FJBXrSEVwKr": {
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg",
+          "name": "19th Batch Department Group",
+          "type": "WhatsApp",
+          "url": "https://chat.whatsapp.com/EnwueGDWsRJEzMaoSmKEeF"
+        },
+        "-OZzTvWQM_4oIUq_6YCn": {
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg",
+          "name": "18th Batch (A) Group",
+          "type": "Telegram",
+          "url": "https://t.me/+wVM_cszr3KBlMmZl"
+        },
+        "-OZzU-bpfj_VnkCMP8Z2": {
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg",
+          "name": "18th Batch (B) Group",
+          "type": "Telegram",
+          "url": "https://t.me/+3xH5kG_MP6ExYzJl"
+        },
+        "-OZzUQEYKJfJfQ3J3jdB": {
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg",
+          "name": "18th Batch (C) Group",
+          "type": "Telegram",
+          "url": "https://t.me/+wArXGGHDpjY4ODZl"
+        },
+        "-OZzVR_3-9c_M0sb2ZKR": {
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg",
+          "name": "19th Batch (C) Group",
+          "type": "Telegram",
+          "url": "https://t.me/+w3PXCdD5HuY5ZTFl"
+        },
+        "-O_IaRKJxx974br7jCVN": {
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg",
+          "name": "Offical Group For Old Batch",
+          "type": "WhatsApp",
+          "url": "https://chat.whatsapp.com/EC1hzhyAHPnLBNeAZwfbR6"
+        }
+      },
+      "notices": {
+        "-O_ITHSCpwM8ZpRJSqG2": {
+          "content": "Syllabus / Focus:\nOOP 4 Pillars:\n        Inheritance\n        Polymorphism\n        Encapsulation\n        Abstraction",
+          "date": "September 22, 2025",
+          "title": "CSE 2108 (OOP II Sessional) – Lab Test"
+        },
+        "-O_ITQe3g-zPKzVFsT_s": {
+          "content": "Syllabus: 1st lab → last lab\n\nQuestion Pattern:\n2 tasks → both must be solved\n1 team task + 1 individual task\nTasks assigned by lottery",
+          "date": "September 23, 2025",
+          "title": "CSE 2102 (DLD Sessional) – LAB Midterm"
+        },
+        "-O_ITdsZdTbC2m-iUhdA": {
+          "content": "Time: Break Time\nSyllabus: Chemical Equilibrium",
+          "date": "September 24, 2025",
+          "title": "Chemistry CT-2"
+        },
+        "-O_V7a917m9iL6arG8zI": {
+          "content": "Course: MATH 2145 (Vector Calculus, Linear Algebra and Complex Variable)\nSyllabus: Vector (except the CT-1 syllabus)",
+          "date": "September 18, 2025",
+          "title": "MATH 2145 : Midterm Examination Syllabus"
+        }
+      },
+      "oldQuestions": {
+        "-OZzQEgZvPyzy74lvyHH": {
+          "title": "CHEM 2133 ALL CTs Questions 18th",
+          "url": "https://drive.google.com/file/d/1ZBnk27Ncs3KH5GMbJ5yZbTCU-1WMCZio/view"
+        },
+        "-OZzQMxoJ02nIlk4CeRJ": {
+          "title": "CSE 2101 ALL CTs Questions 18th",
+          "url": "https://drive.google.com/file/d/1qayExYBSoAshceGAjQAf00zpRDyg-HfJ/view"
+        },
+        "-OZzQsZi3IWUnAqVduo_": {
+          "title": "CSE 2103 ALL CTs Questions 18th",
+          "url": "https://drive.google.com/file/d/1rAFtev9tOVN2YMxN0AVHWsi64c75OWYh/view"
+        },
+        "-OZzR3l22FQbb1N9Xv43": {
+          "title": "CSE 2105 ALL CTs Questions 18th",
+          "url": "https://drive.google.com/file/d/1eX6TWNQEO83jtRwebYEdl-W_BRXBsbLh/view"
+        },
+        "-OZzRDTwN9Khy4QHhlBS": {
+          "title": "MATH 2145 ALL CTs Questions 18th",
+          "url": "https://drive.google.com/file/d/1_OeWkYRisukmgH8oQzv0NP9drlDiz7IG/view"
+        },
+        "-OZzRIo2ipffv_sqqLO1": {
+          "title": "Mid_Term Questions 18th Batch",
+          "url": "https://drive.google.com/file/d/1UrMS1LUv-vD1V81SlGJeFo76znRcySHH/view"
+        },
+        "-OZzRRDg-GPIagIYPfLs": {
+          "title": "Final Exam Question Winter-25 18th",
+          "url": "https://drive.google.com/file/d/1WzfWWpKIfW4HsRQrI3yY6ObeFCK_7XK_/view"
+        },
+        "-OZzRZ_II7lkP0R0xSLq": {
+          "title": "Mid_Term Questions 17th Batch",
+          "url": "https://drive.google.com/file/d/1ROfbls9FnFaCbFOiqMOIbaG8CBy-hhdB/view"
+        },
+        "-OZzRfBxE1qdKZfV3FFg": {
+          "title": "Final Examination Questions 17th Batch",
+          "url": "https://drive.google.com/file/d/1k8kfi0-08Cdp_l40BPqijTbAEUtNlL8G/view"
+        }
+      },
+      "results": {
+        "CHEM-2133": {
+          "0802420205101126": {
+            "ct1": 15
+          }
+        },
+        "CSE-2101": {
+          "0802420105101108": {
+            "ct1": 10
+          },
+          "0802420205101126": {
+            "ct1": 11,
+            "ct2": 13
+          }
+        }
+      },
+      "routineLink": "https://drive.google.com/file/d/121QQnuFbKEuKwyXeNEG6zNT0PhFcNslg/view"
+    }
+  },
+  "pendingUpdates": {
+    "19th-batch-c": {
+      "-O_eUrvpfSWmh-1IA7hK": {
+        "details": "Course: CSE-2104",
+        "isDisposable": false,
+        "sourcePath": "classes/19th-batch-c/courses/CSE-2104/resources/-O_eUrobmtGm9Y1djFvh",
+        "timestamp": 1758428363981,
+        "title": "DSA Lab Resources & Lab Code (Provide by Course Teacher)",
+        "type": "New Resource"
+      },
+      "-O_eZJi-6G_dhRFBK-gs": {
+        "details": "Submit by: 12/10/2025",
+        "isDisposable": false,
+        "sourcePath": "classes/19th-batch-c/courses/CSE-2104/labReports/-O_eZJc1UTiBn8szeqZb",
+        "timestamp": 1758429530452,
+        "title": "Introduction to Stack Data Structures",
+        "type": "New Lab Report"
+      }
+    }
+  },
+  "students": {
+    "0802310205101040": {
+      "classId": "19th-batch-c",
+      "devices": {
+        "customfp_00e2899200e9322c2a69bc5f16f43a867564ba3b8052b9a63732ba5931d197b5": {
+          "lastIP": "Unavailable",
+          "lastSeen": "2025-09-21T14:15:21.734Z"
+        },
+        "customfp_282517398255e37d247d9e9515f36fc1b024212c075344c851909afe194e6e25": {
+          "lastIP": "Unavailable",
+          "lastSeen": "2025-09-14T17:02:58.023Z"
+        }
+      },
+      "email": "soaibhossainshadin2002@gmail.com",
+      "maxDeviceLimit": 10,
+      "name": "MD SOAIB HOSSAIN",
+      "paid": true,
+      "password": "2f382555290bec4fe51de3902ab781acaec83133548d1142790f7dda4dfc57c5",
+      "username": "shadin"
+    },
+    "0802310405101050": {
+      "classId": "19th-batch-c",
+      "devices": {
+        "customfp_d9b2021fddde685bb9644a4903b6a384352298161b91ef8ab847c1540d67f8cf": {
+          "lastIP": "103.161.66.36",
+          "lastSeen": "2025-09-16T04:37:23.960Z"
+        }
+      },
+      "email": "mahmudulhasanshawon93@gmail.com",
+      "maxDeviceLimit": 10,
+      "name": "Mahmudul Hasan Shawon",
+      "paid": true,
+      "password": "9eda52f89645b344de631d067b3df0e49db6cf810a4fd7146bf42ac2ffced783",
+      "username": "shawon 50"
+    },
+    "0802320105101007": {
+      "classId": "19th-batch-c",
+      "devices": {
+        "customfp_f55f34e158d9f529c610c0f63fdab5784d935f57abf1905a5932855242be9a09": {
+          "lastIP": "27.147.191.131",
+          "lastSeen": "2025-09-17T18:08:47.214Z"
+        }
+      },
+      "email": "sharminsultanaaa21@gmail.com",
+      "maxDeviceLimit": 10,
+      "name": "Sharna",
+      "paid": true,
+      "password": "a476764981f719c9a086c726b7bd2186b95d6cf54d034c31083ef89ea280b9b9",
+      "username": "sharmin sultana"
+    },
+    "0802410105101075": {
+      "classId": "19th-batch-c",
+      "devices": {
+        "customfp_36391deff3cd7c7bdf87e36803780811aef5bfdf8a3377cce73d5b1f59cafbf5": {
+          "initialIP": "114.129.15.8",
+          "ipMismatchCount": 0,
+          "lastIP": "114.129.15.8",
+          "lastSeen": "2025-09-15T07:33:43.910Z",
+          "registeredAt": "2025-09-14T17:36:05.653Z",
+          "userAgent": "Mozilla/5.0 (Linux; Android 15; motorola edge 60 fusion Build/V2VC35.33-132-6; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/139.0.7258.158 Mobile Safari/537.36"
+        }
+      },
+      "maxDeviceLimit": 10,
+      "name": "Maliha Tabassum",
+      "paid": true
+    },
+    "0802410205101076": {
+      "classId": "19th-batch-c",
+      "maxDeviceLimit": 10,
+      "name": "Tanzim Mashrur Tashin",
+      "paid": true
+    },
+    "0802410205101098": {
+      "classId": "19th-batch-c",
+      "devices": {
+        "customfp_9c36a09c979fec52fc4cfa37e93aa181d4aa399cba82e4e559f0889fbf4f5032": {
+          "lastIP": "37.111.230.44",
+          "lastSeen": "2025-09-18T18:29:47.702Z"
+        },
+        "customfp_b06b955e5a699e2cdd8ec04b01cafc62a4a02c1f04d897d607f3fa478506b844": {
+          "lastIP": "37.111.229.184",
+          "lastSeen": "2025-09-19T18:06:04.961Z"
+        },
+        "customfp_e19f720b0dfcc7729badd532ea36629a6fee656d724c5d52f4ca7b9d372599ac": {
+          "lastIP": "118.179.44.107",
+          "lastSeen": "2025-09-20T14:24:23.120Z"
+        }
+      },
+      "email": "rakibhossain987645@gmail.com",
+      "maxDeviceLimit": 10,
+      "name": "Shahadat Hossain",
+      "paid": true,
+      "password": "2e7303353bc08afb60041696bcff8a7b0674d44f771fb58a4e7818585129d6d0",
+      "username": "shahadat hossain"
+    },
+    "0802410405101099": {
+      "classId": "19th-batch-c",
+      "devices": {
+        "customfp_32ecc603c8851751adf40619519043de9dcc878ce1dfc37ef3b4a6df78710f32": {
+          "lastIP": "118.179.82.10",
+          "lastSeen": "2025-09-14T17:01:39.833Z"
+        }
+      },
+      "email": "ahmedmobasher096@gmail.com",
+      "maxDeviceLimit": 10,
+      "name": "Ahmed Mobasher",
+      "paid": true,
+      "password": "59b4c62fca13b332a28a5a29ddf7353c414feca304d4b2192703945740beaf39",
+      "username": "ahmedcse"
+    },
+    "0802420105101101": {
+      "classId": "19th-batch-c",
+      "maxDeviceLimit": 10,
+      "name": "MST. MOMITA JAMAN MOMO",
+      "paid": true
+    },
+    "0802420105101102": {
+      "classId": "19th-batch-c",
+      "maxDeviceLimit": 10,
+      "name": "MST. MARJIA MEHEJABIN",
+      "paid": true
+    },
+    "0802420105101107": {
+      "classId": "19th-batch-c",
+      "devices": {
+        "customfp_361f911969e959a77cb10b09ff4a2211993737bb2069661fa5b602499150a1ed": {
+          "lastIP": "103.161.66.33",
+          "lastSeen": "2025-09-14T17:12:50.116Z"
+        }
+      },
+      "email": "farhatabassum511@gmail.com",
+      "maxDeviceLimit": 10,
+      "name": "MOST. FARHA TABASSUM ANANNA",
+      "paid": true,
+      "password": "b4421102ccf61c0ef18441e093788f43f0cfc9783e840c287b1ecc66f781f88d",
+      "username": "farha tabassum ananna"
+    },
+    "0802420105101108": {
+      "classId": "19th-batch-c",
+      "devices": {
+        "customfp_361f911969e959a77cb10b09ff4a2211993737bb2069661fa5b602499150a1ed": {
+          "lastIP": "27.147.202.76",
+          "lastSeen": "2025-09-20T07:57:45.045Z"
+        }
+      },
+      "email": "anu.19th.108@gmail.com",
+      "maxDeviceLimit": 10,
+      "name": "MOST. FARIHA TABASSUM ANU",
+      "paid": true,
+      "password": "1dd6434d67a44883a92fec2475e06855e443366384a2bf46e378e563e01303f6",
+      "username": "fariha tabassum anu"
+    },
+    "0802420105101109": {
+      "classId": "19th-batch-c",
+      "maxDeviceLimit": 10,
+      "name": "NUSRAT JAHAN JUI",
+      "paid": true
+    },
+    "0802420105101113": {
+      "classId": "19th-batch-c",
+      "maxDeviceLimit": 10,
+      "name": "SHIDRATUL MUNTAHA",
+      "paid": true
+    },
+    "0802420105101114": {
+      "classId": "19th-batch-c",
+      "devices": {
+        "customfp_74e76b527c2a6cba29567e9d3fb455cdd6d74b072e5cb88320e9848b6aa9db9d": {
+          "lastIP": "37.111.225.203",
+          "lastSeen": "2025-09-15T03:03:13.504Z"
+        }
+      },
+      "email": "mirfarhana2005@gmail.com",
+      "maxDeviceLimit": 10,
+      "name": "FARHANA BENTE HUSSIN SAYDA",
+      "paid": true,
+      "password": "22d50cc4f55c1082e5b831d22198e0823446f78cc9060107ffd4cf20fbd76663",
+      "username": "mir_sayda"
+    },
+    "0802420105101115": {
+      "classId": "19th-batch-c",
+      "devices": {
+        "customfp_a9e19f212d0239dff1bd3abb6818e189b9f7e9a5af217ef08ed69e338983748a": {
+          "lastIP": "45.125.222.89",
+          "lastSeen": "2025-09-17T18:06:39.260Z"
+        }
+      },
+      "email": "jannatulmaowa1903@gmail.com",
+      "maxDeviceLimit": 10,
+      "name": "JANNATUL MAOWA JEBA",
+      "paid": true,
+      "password": "165b596be26a46f38092445739868d280aab4819be47fa6cc2ec97d2b673e99a",
+      "username": "jeba_115"
+    },
+    "0802420105101119": {
+      "classId": "19th-batch-c",
+      "devices": {
+        "customfp_463cf3da44b8cea37359c152546ad1141a40a7fd9079b5d93700d7d9be14b241": {
+          "lastIP": "118.179.209.33",
+          "lastSeen": "2025-09-16T17:24:57.148Z"
+        }
+      },
+      "email": "heyprionty@gmail.com",
+      "maxDeviceLimit": 10,
+      "name": "ASHRIA JAHAN PRIONTY",
+      "paid": true,
+      "password": "0c57913d2a6fe92b32730f97e866140458387f30489b1db42bf690de3c930443",
+      "username": "prionty_waves"
+    },
+    "0802420105101120": {
+      "classId": "19th-batch-c",
+      "devices": {
+        "customfp_2d42ba629f2c2e30614260426202ffedb02bd5c6fcc3b6c9173b3b25e6e8d2f1": {
+          "lastIP": "118.179.44.107",
+          "lastSeen": "2025-09-19T05:07:50.121Z"
+        },
+        "customfp_b9a6320f7f9abd4e23c2aab4d6b9f3a375a814b3618ccee8fb561eb5c3be9841": {
+          "lastIP": "103.161.66.31",
+          "lastSeen": "2025-09-15T16:01:57.331Z"
+        }
+      },
+      "email": "2126lopa@gmail.com",
+      "maxDeviceLimit": 10,
+      "name": "MUNTASERA TABASSUM LOPA",
+      "paid": true,
+      "password": "be4c3487e9a4da0678744512f9b4749c36c999f4d64ef4f1d0d0b0452a9221bb",
+      "username": "lopa"
+    },
+    "0802420105101122": {
+      "classId": "19th-batch-c",
+      "devices": {
+        "customfp_8fb6da3989056f31b982d837f9fcdb95c031c2393a65cb99e2498277624de6a1": {
+          "lastIP": "37.111.226.89",
+          "lastSeen": "2025-09-18T06:41:22.955Z"
+        },
+        "customfp_90d4f4073859a46a581144f279c92e3f38821434b30850230cf621220ed0dc5a": {
+          "lastIP": "37.111.226.89",
+          "lastSeen": "2025-09-18T03:06:03.193Z"
+        },
+        "customfp_b392539cb37fead16d899a8b59133b5b29c3697f20623c683903e2f4935d3189": {
+          "lastIP": "103.244.143.171",
+          "lastSeen": "2025-09-16T17:23:59.067Z"
+        },
+        "customfp_d0a93713b69a9be48f6260dc88d4d7996afcee80194b0dedb0e1d0b3e9961e81": {
+          "lastIP": "37.111.226.89",
+          "lastSeen": "2025-09-18T03:04:18.383Z"
+        },
+        "customfp_f55f34e158d9f529c610c0f63fdab5784d935f57abf1905a5932855242be9a09": {
+          "lastIP": "103.244.143.173",
+          "lastSeen": "2025-09-20T04:50:01.694Z"
+        }
+      },
+      "email": "trifa663@gmail.com",
+      "maxDeviceLimit": 10,
+      "name": "MST. RIFA TAMANNA",
+      "paid": true,
+      "password": "213da9478daa5909b13ff241d71f8bf14810a1acad94e2c8470e7b65ad23807a",
+      "username": "tamanna122"
+    },
+    "0802420105101127": {
+      "classId": "19th-batch-c",
+      "devices": {
+        "customfp_ac8c0182494e196b0276792cbb0701f71e7e145335bdb39eaa64b25cb94ae31a": {
+          "lastIP": "103.126.217.112",
+          "lastSeen": "2025-09-14T16:48:26.760Z"
+        }
+      },
+      "email": "disharoytripty@gmail.com",
+      "maxDeviceLimit": 10,
+      "name": "DISHA ROY TRIPTY",
+      "paid": true,
+      "password": "a47b1af3c35db9cce14fef3857f325d03790e460bb50773317ef51fb2fc7482c",
+      "username": "disha27"
+    },
+    "0802420105101132": {
+      "classId": "19th-batch-c",
+      "devices": {
+        "customfp_76048fd54ea2364e1a3e664c1134d148b032b8d719b71dddf5b97785d897834b": {
+          "lastIP": "27.147.191.130",
+          "lastSeen": "2025-09-20T07:18:31.673Z"
+        },
+        "customfp_e31bf40005e44a81b80a073946fe3b008c673cfa491b239632675e7b27c1d433": {
+          "lastIP": "27.147.191.130",
+          "lastSeen": "2025-09-20T06:05:16.258Z"
+        }
+      },
+      "email": "tanushreebd777@gmail.com",
+      "maxDeviceLimit": 10,
+      "name": "TANUSHREE ROY",
+      "paid": true,
+      "password": "87b5cac2b9d245f5c5cd49786160b7d87837ae6283ea40eaf38d8f736a31e4d9",
+      "username": "tanushree_132"
+    },
+    "0802420105101135": {
+      "classId": "19th-batch-c",
+      "devices": {
+        "customfp_0c9bd597cc0d2c9b9432acec23bb0ff93a0e95fa994abf5ca1c0d1ec14e250a8": {
+          "lastIP": "103.161.66.37",
+          "lastSeen": "2025-09-20T06:15:06.741Z"
+        }
+      },
+      "email": "mrinmoyerahman39@gamil.com",
+      "maxDeviceLimit": 10,
+      "name": "MRINMOYE RAHMAN",
+      "paid": true,
+      "password": "242266c89b3d33e958ead17d16cb55e90a7136929400054137b82e1112381b77",
+      "username": "mrinmoyezz"
+    },
+    "0802420105101141": {
+      "classId": "19th-batch-c",
+      "maxDeviceLimit": 10,
+      "name": "FARHANA TABASSUM PROME",
+      "paid": true
+    },
+    "0802420205101032": {
+      "classId": "19th-batch-c",
+      "devices": {
+        "customfp_bbba8fe1e6f22681dc168feb58da20dd3e2d0c2e5d79a085b671b3b6e2615692": {
+          "lastIP": "103.189.159.140",
+          "lastSeen": "2025-09-20T07:26:07.310Z"
+        }
+      },
+      "email": "asifcse19@gmail.com",
+      "maxDeviceLimit": 10,
+      "name": "Md. Asif Hasan",
+      "paid": true,
+      "password": "e8f032ff882e924e08b58b0b6e216fa8d9b98e910d80fd9ac881a09788a3b55d",
+      "username": "asif"
+    },
+    "0802420205101057": {
+      "classId": "19th-batch-c",
+      "maxDeviceLimit": 10,
+      "name": "Abu Ubaydah",
+      "paid": true
+    },
+    "0802420205101100": {
+      "classId": "19th-batch-c",
+      "maxDeviceLimit": 10,
+      "name": "NAFIS HASAN ABID",
+      "paid": true
+    },
+    "0802420205101105": {
+      "classId": "19th-batch-c",
+      "devices": {
+        "customfp_710667bf62a0fb12035bc38d86cf41dc778b7db7dfa244d22cc8197fa831d3b6": {
+          "lastIP": "103.244.141.118",
+          "lastSeen": "2025-09-16T18:05:31.885Z"
+        }
+      },
+      "email": "rokon0425@gmail.com",
+      "maxDeviceLimit": 10,
+      "name": "ALL SHAHRIAR RAHMAN ROKON",
+      "paid": true,
+      "password": "60eea55c77c4e040a1775537175f67ce18009684652970753a09df2ca5d59271",
+      "username": "rokon_10"
+    },
+    "0802420205101106": {
+      "classId": "19th-batch-c",
+      "maxDeviceLimit": 10,
+      "name": "MD. AYMAN ABID SEYAM",
+      "paid": true
+    },
+    "0802420205101112": {
+      "classId": "19th-batch-c",
+      "maxDeviceLimit": 10,
+      "name": "SHAH MD. AL JUNAID",
+      "paid": true
+    },
+    "0802420205101118": {
+      "classId": "19th-batch-c",
+      "devices": {
+        "customfp_5d5970ee3388060f36a0bfec65c9b807fd6c08a6e2ea864cbd84682927ba3f76": {
+          "lastIP": "118.179.44.108",
+          "lastSeen": "2025-09-16T17:50:44.791Z"
+        }
+      },
+      "email": "yesminshahana243@gmail.com",
+      "maxDeviceLimit": 10,
+      "name": "MD. SANZID HASAN",
+      "paid": true,
+      "password": "58e9b13909610313b7ef963c16e0d73b8c1e5d75304d13aa2745eef4dd369fe7",
+      "username": "md sanzid hasan"
+    },
+    "0802420205101123": {
+      "classId": "19th-batch-c",
+      "email": "mdtanjimulislamtamim999@gmail.com",
+      "maxDeviceLimit": 10,
+      "name": "MD TANJIMUL ISLAM TAMIM",
+      "paid": true,
+      "password": "2e86b9f393e0ee9ca94610622924e3540ae60ef7d842061becf97e518042c8df",
+      "username": "tamim"
+    },
+    "0802420205101126": {
+      "classId": "19th-batch-c",
+      "devices": {
+        "customfp_18adfa73cee8ca99f24d9fa7547f4f1b5382ff44935be2f1c383820f263116c4": {
+          "lastIP": "103.130.119.165",
+          "lastSeen": "2025-09-16T17:22:15.598Z"
+        },
+        "customfp_6dcb588daf85963a26bda6fa271f108c67e4bdbb9ef37619af13fac0bb675f0c": {
+          "lastIP": "103.130.119.165",
+          "lastSeen": "2025-09-20T18:34:58.008Z"
+        }
+      },
+      "email": "jahid.19th.126@gmail.com",
+      "maxDeviceLimit": 10,
+      "name": "MD JAHID HASAN",
+      "paid": true,
+      "password": "cb57736a03ebde854f6cf70391be058ae15eb0ef1831b957f7c9b976320ef74d",
+      "username": "jahid126"
+    },
+    "0802420205101130": {
+      "classId": "19th-batch-c",
+      "devices": {
+        "customfp_5b519b6bb1fbdcd24b26198e1b86be446497aeaa7ba66d20dc531d64ff0aa93e": {
+          "lastIP": "27.147.200.25",
+          "lastSeen": "2025-09-15T10:30:02.819Z"
+        }
+      },
+      "email": "2023200000803@seu.edu bd",
+      "maxDeviceLimit": 10,
+      "name": "SHAH MD. RIAZUL ISLAM",
+      "paid": true,
+      "password": "fb4b3569f1a4cf483f97d6138d570c28e74f354d0f3b9f3ed66a420dc8e2e9d8",
+      "username": "riazul130"
+    },
+    "0802420205101131": {
+      "classId": "19th-batch-c",
+      "devices": {
+        "customfp_390d27c07c0f626ec73bbc9975f4e6d84c42fd27181d4be9dd28f0c8360cc8b4": {
+          "lastIP": "59.152.6.140",
+          "lastSeen": "2025-09-15T08:23:23.655Z"
+        },
+        "customfp_83c325e796ca5f67fa04f7636d255c8a2b4ecee52950809323a13912245411f3": {
+          "lastIP": "43.245.121.210",
+          "lastSeen": "2025-09-21T02:48:33.264Z"
+        }
+      },
+      "email": "farhanalam.22200@gmail.com",
+      "maxDeviceLimit": 10,
+      "name": "MD. FARHAN ALAM",
+      "paid": true,
+      "password": "bb421fa35db885ce507b0ef5c3f23cb09c62eb378fae3641c165bdf4c0272949",
+      "username": "farhan"
+    },
+    "0802420205101136": {
+      "classId": "19th-batch-c",
+      "maxDeviceLimit": 10,
+      "name": "ABDULLAH - AL GALIB TONMOY",
+      "paid": true
+    },
+    "0802420205101137": {
+      "classId": "19th-batch-c",
+      "devices": {
+        "customfp_c4584639f44077d02824f14f1de7560575e4da4945a77b51e351f00e654a02b8": {
+          "lastIP": "118.179.44.108",
+          "lastSeen": "2025-09-14T16:43:26.295Z"
+        }
+      },
+      "email": "mdsajolhasan5@gmail.com",
+      "maxDeviceLimit": 10,
+      "name": "MD. SAJOL HASSAN",
+      "paid": true,
+      "password": "bf0769e7f45682abd0c08536982ff5cc59b32385c3c14e316859a37527b8836f",
+      "username": "md sajol hassan"
+    },
+    "0802420205101138": {
+      "classId": "19th-batch-c",
+      "devices": {
+        "customfp_95b1f8ea2d000334729d83d16a0324bae27f21d46dc1a0a6a49a21907462ab51": {
+          "lastIP": "118.179.44.108",
+          "lastSeen": "2025-09-16T17:41:31.103Z"
+        }
+      },
+      "email": "asmsayem12live@gmail.com",
+      "maxDeviceLimit": 10,
+      "name": "A. S. M. SAYEM",
+      "paid": true,
+      "password": "ef797c8118f02dfb649607dd5d3f8c7623048c9c063d532cc95c5ed7a898a64f",
+      "username": "sayem"
+    },
+    "0802420205101140": {
+      "classId": "19th-batch-c",
+      "devices": {
+        "customfp_32ecc603c8851751adf40619519043de9dcc878ce1dfc37ef3b4a6df78710f32": {
+          "lastIP": "27.147.191.130",
+          "lastSeen": "2025-09-21T15:47:22.451Z"
+        },
+        "customfp_6dcb588daf85963a26bda6fa271f108c67e4bdbb9ef37619af13fac0bb675f0c": {
+          "lastIP": "27.147.191.130",
+          "lastSeen": "2025-09-21T15:41:44.251Z"
+        }
+      },
+      "email": "mdseyamali2005@gmail.com",
+      "maxDeviceLimit": 10,
+      "name": "MD. SEYAM ALI",
+      "paid": true,
+      "password": "cc844a6fa5b097c9db922bfa284631ffe212502540d9237f6abce2f76836f545",
+      "username": "seyam"
+    },
+    "0802420205101143": {
+      "classId": "19th-batch-c",
+      "devices": {
+        "customfp_32ecc603c8851751adf40619519043de9dcc878ce1dfc37ef3b4a6df78710f32": {
+          "lastIP": "103.25.250.130",
+          "lastSeen": "2025-09-20T16:05:57.955Z"
+        },
+        "customfp_d03d41bbf8fe4bf4599ec95ecc768158074f6d6d0fd0e6107979ed7b0b046a4c": {
+          "lastIP": "103.25.248.128",
+          "lastSeen": "2025-09-17T05:47:08.907Z"
+        }
+      },
+      "email": "monir57009544@gmail.com",
+      "maxDeviceLimit": 10,
+      "name": "MD MONIRUZZAMAN MONIR",
+      "paid": true,
+      "password": "a3b40626e1991e73cb200e8c50c34bdfa3823f12634b8a05d3dcb852bbc1b4b3",
+      "username": "monir_12"
+    },
+    "0802420205101144": {
+      "classId": "19th-batch-c",
+      "devices": {
+        "customfp_2c57fddae35b89e458280a27c957dc3a9935393b38d44daceb5d5f9fab100f89": {
+          "lastIP": "103.138.147.141",
+          "lastSeen": "2025-09-20T17:00:09.417Z"
+        }
+      },
+      "email": "shiratul234@gmail.com",
+      "maxDeviceLimit": 10,
+      "name": "SHIRATUL BASHAR",
+      "paid": true,
+      "password": "b4876a6d5cf344d2b26eb025f355f94e1b145e2a5b1147449e5e1a513d3ae26d",
+      "username": "sharno"
+    },
+    "0802420405101103": {
+      "classId": "19th-batch-c",
+      "maxDeviceLimit": 10,
+      "name": "MD. SAYADUL ISLAM",
+      "paid": true
+    },
+    "0802420405101134": {
+      "classId": "19th-batch-c",
+      "devices": {
+        "customfp_d2e0b70d9bf660331c12f7359c58ee7ab10d7a09437e52b3c2b5bb6dcb74ea64": {
+          "lastIP": "103.106.239.241",
+          "lastSeen": "2025-09-18T14:43:35.302Z"
+        }
+      },
+      "email": "mdtanvirislammasum34@gmail.com",
+      "maxDeviceLimit": 10,
+      "name": "MD. TANVIR ISLAM MASUM",
+      "paid": true,
+      "password": "7c47403b22d0a3f346b6be316846109df7c548131b6c45ff73e380afba39f373",
+      "username": "tanvir134"
+    },
+    "0802420405101139": {
+      "classId": "19th-batch-c",
+      "devices": {
+        "customfp_07d87562828f589c12557e4c77935971c1d6fa680e770152e43be15d3aedcfb6": {
+          "lastIP": "118.179.44.105",
+          "lastSeen": "2025-09-17T02:49:32.349Z"
+        },
+        "customfp_47553e61f8756ba84dbb4866aa2d439e7fce9552de4147cdccbe84c61cc93127": {
+          "lastIP": "118.179.44.105",
+          "lastSeen": "2025-09-15T17:04:44.143Z"
+        },
+        "customfp_83e5fadf63d8117f112e4b93908be68e141ac96804ec3a00e9ada74db97cc805": {
+          "lastIP": "118.179.44.105",
+          "lastSeen": "2025-09-20T15:18:17.984Z"
+        }
+      },
+      "email": "mdeliasahmad99@gmail.com",
+      "maxDeviceLimit": 10,
+      "name": "MD. ELIAS AHMAD",
+      "paid": true,
+      "password": "7ff94c35e8836ba9873272fc1fca2251187af6f608623afdbb9b7e86f2ca8ccc",
+      "username": "elias139"
+    }
+  },
+  "superAdmins": {
+    "czmGJWIdYQeXLEh7gf2YEGsT1R63": true
+  },
+  "usernames": {
+    "ahmedcse": "0802410405101099",
+    "asif": "0802420205101032",
+    "disha27": "0802420105101127",
+    "elias139": "0802420405101139",
+    "farha tabassum ananna": "0802420105101107",
+    "farhan": "0802420205101131",
+    "fariha tabassum anu": "0802420105101108",
+    "jahid126": "0802420205101126",
+    "jeba_115": "0802420105101115",
+    "lopa": "0802420105101120",
+    "md sajol hassan": "0802420205101137",
+    "md sanzid hasan": "0802420205101118",
+    "mir_sayda": "0802420105101114",
+    "monir_12": "0802420205101143",
+    "mrinmoyezz": "0802420105101135",
+    "prionty_waves": "0802420105101119",
+    "riazul130": "0802420205101130",
+    "rokon_10": "0802420205101105",
+    "sayem": "0802420205101138",
+    "seyam": "0802420205101140",
+    "shadin": "0802310205101040",
+    "shahadat hossain": "0802410205101098",
+    "sharmin sultana": "0802320105101007",
+    "sharno": "0802420205101144",
+    "shawon 50": "0802310405101050",
+    "tamanna122": "0802420105101122",
+    "tamim": "0802420205101123",
+    "tanushree_132": "0802420105101132",
+    "tanvir134": "0802420405101134"
+  }
+}

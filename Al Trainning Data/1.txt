@@ -1,0 +1,1799 @@
+================================================================================
+COMPLETE BAUST STUDENT PORTAL AI ASSISTANT TRAINING DATA
+================================================================================
+
+================================================================================
+1. MANDATORY PRIVACY & SEARCH RULES
+================================================================================
+
+STUDENT ID MASKING (CRITICAL - MUST FOLLOW)
+--------------------------------------------
+- OUTPUT RULE: ALWAYS mask student IDs showing only last 3 digits
+- FORMAT: ******126 (asterisks + last 3 digits)
+- NEVER display full unmasked IDs in any context
+
+SMART SEARCH LOGIC
+------------------
+1. 3-digit search: Search IDs ending with those 3 digits
+2. Full ID search: Search for exact match
+3. Single match: Show name + masked ID
+4. Multiple matches: "Multiple students end with [digits]. Please provide more digits to be specific."
+5. No match: "No student found matching that number."
+
+PRIVACY PROTECTION
+------------------
+- NEVER reveal: marks, GPA, CGPA, attendance percentages
+- If asked: "I can't share marks here for privacy reasons. Please log in to the Results page on the portal."
+
+================================================================================
+2. PORTAL OVERVIEW
+================================================================================
+
+WHAT IS THIS PORTAL?
+--------------------
+University Student Portal for BAUST (Bangladesh Army University of Science and Technology). 
+Central hub for results, notices, resources, old questions, and academic calendar.
+
+CREATOR & CONTACT
+-----------------
+Created by: MD. JAHID HASAN – Class Representative (CR), Section C, 19th Batch
+- WhatsApp: +8801703988303
+- Facebook: https://www.facebook.com/MJ2k0604
+- Email: jahid.19th.126@gmail.com
+
+================================================================================
+3. ACCOUNT & LOGIN
+================================================================================
+
+LOGIN PROCESS
+-------------
+- Enter username and password → click LOGIN
+- Device information tracked for security
+
+FORGOT PASSWORD
+---------------
+1. Click "Forgot Password?"
+2. Enter username → receive 6-digit email code
+3. Verify code → set new password
+
+FORGOT USERNAME
+---------------
+- Use "Forgot Username?" on password reset page
+- Enter full Student ID to retrieve username
+
+CREATE ACCOUNT
+--------------
+- Required: Student ID, username, email, password
+- Use "Create an account" link
+
+================================================================================
+4. PAYMENT & ACTIVATION
+================================================================================
+
+FEE & PAYMENT
+-------------
+- One-time activation fee: 10 BDT
+- Payment method: bKash to 01540152307
+- Process: Send 10 BDT → copy TrxID → submit bKash number + TrxID in portal
+- Activation time: Up to 24 hours after admin verification
+
+================================================================================
+5. DASHBOARD FEATURES
+================================================================================
+
+SECTIONS AVAILABLE
+------------------
+- Welcome: Total subjects, assignments, lab reports, academic calendar, class routine download
+- Results: Per-subject CT/Midterm/attendance/total (login required), PDF download available
+- Question Bank: CT-1, CT-2, CT-3, Midterm papers by subject
+- Resources: Lecture slides, notes uploaded by teachers
+- Old Questions: Previous midterm/final exam papers
+- Notice Board: Official notices (holidays, deadlines)
+- Groups: WhatsApp/Telegram community group links
+- About: Portal information
+
+SUBJECT INFORMATION ACCESS
+--------------------------
+- From Welcome → TOTAL SUBJECTS card
+- Click subject to view: course teacher name, designation, department, phone
+
+================================================================================
+6. CURRENT SEMESTER SUBJECTS
+================================================================================
+
+THEORY COURSES
+--------------
+1. CSE 2101: Digital Logic Design
+2. CSE 2103: Data Structures and Algorithm I
+3. CSE 2105: Applied Statistics for Computer Science
+4. CHEM 2133: Chemistry
+5. MATH 2145: Vector Calculus, Linear Algebra and Complex Variable
+
+SESSIONAL COURSES
+-----------------
+1. CSE 2100: Software Development Project I
+2. CSE 2102: Digital Logic Design Sessional
+3. CSE 2104: Data Structures and Algorithm I Sessional
+4. CSE 2108: Object Oriented Programming Language II Sessional
+
+================================================================================
+7. ACADEMIC CALENDAR & EVENTS
+================================================================================
+
+KEY DATES
+---------
+- Class Start: August 10, 2025
+- Midterm Exam: September 28 – October 4, 2025
+- Final Exam: December 14, 2025 – January 3, 2026
+
+HOLIDAYS (EXAMPLES)
+-------------------
+- Janmashtami: August 16
+- Eid-e-Milad-un-Nabi: September 5
+- Durga Puja: October 1-2
+- Victory Day: December 16
+- Christmas: December 25
+
+CALENDAR FEATURES
+-----------------
+- Colored days indicate events
+- Click colored day for event details (assignment, exam, deadline)
+
+================================================================================
+8. TECHNICAL DETAILS
+================================================================================
+
+DATA STORAGE
+------------
+- Platform: Firebase Realtime Database (secure, encrypted)
+- Structure: JSON-like format (not public file)
+- Updates: Admin updates directly in Firebase (no app update required)
+- Security: Encrypted, only accessible after login with password
+
+================================================================================
+9. ACADEMIC POLICIES
+================================================================================
+
+ATTENDANCE RULES
+----------------
+- ≥80%: Eligible for final exam without fine
+- 65-79.9%: Eligible but must pay fine for admit card
+- <65%: Not eligible (unless special permission)
+
+SPECIAL PERMISSION
+------------------
+- Apply to Head of Department with valid proof
+- Requires Course Advisor recommendation
+- Head's decision is final
+
+RIB EXAMS
+---------
+RIB = Referred/Improvement/Backlog exam after final results
+- Referred/Backlog: For students who failed
+- Improvement: For students wanting better grades
+
+FAILURE CONSEQUENCES
+--------------------
+- Fail final + RIB → Final grade 'F' → Retake as backlog with junior batch
+
+"FAILED" VS "REFERRED"
+----------------------
+- "Failed": May cause semester drop in severe cases
+- "Referred": Second chance via RIB exam
+
+================================================================================
+10. UNIVERSITY INFORMATION
+================================================================================
+
+BASIC DETAILS
+-------------
+- Full Name: Bangladesh Army University of Science and Technology
+- Established: February 15, 2015 (10 years old)
+- Location: Saidpur Cantonment, Saidpur 5311
+- Campus Type: Urban
+- Official Colors: Green and Gold
+- Students: 3000+
+- Motto: Discipline, Knowledge, Morality
+- Approval: UGC and Government of Bangladesh
+
+CONTACT INFORMATION
+-------------------
+- Admission: +8801769675588, +8801769675554
+- Admin: +8801769675559
+- Emails: registrar@baust.edu.bd, info@baust.edu.bd
+
+BATCH & SEMESTER INFORMATION
+----------------------------
+- Current admitted batch: 21st batch
+- Semester frequency: Every 6 months (biannual)
+- Semester end: Each semester ends in July
+- Intake months: January and August
+
+BATCH TIMELINE
+--------------
+- August 2025: 21st batch
+- January 2026: 22nd batch
+- August 2026: 23rd batch
+- (Continues every 6 months)
+
+================================================================================
+11. KEY PERSONNEL
+================================================================================
+
+VC'S OFFICE
+-----------
+
+Vice Chancellor
+- Name: Brig Gen Mohammad Mobarak Hossain Majumder, psc
+- Phone: +8801769675550 (Off)
+- Email: vc@baust.edu.bd
+- Qualification: B.Sc. & M.Sc. in Mechanical Engineering (ME), BUET
+
+PS to Vice Chancellor
+- Name: Mohammad Shariful Islam Khan
+- Phone: 01716889495
+- Email: pstovc@baust.edu.bd, nowabkhan@gmail.com
+- Qualification: MBA
+
+PA to Vice Chancellor
+- Name: Md. Zainal Abedin
+- Phone: 01966619555
+
+Runner for Vice Chancellor
+- Name: Md. Taha Mia
+- Phone: 01753557134
+- Email: taharanu32@gmail.com
+
+OFFICE OF THE TREASURER
+------------------------
+
+Treasurer
+- Name: Lt Col Md Shameem Reza, PhD (retd)
+- Phone: +8801769662723 (Office)
+- Email: treasurer@baust.edu.bd
+
+Acting Director (Finance)
+- Name: Ummay Saihun
+- Phone: 01769662697 (Off), 01722521710 (Pers)
+- Email: deputy_director.fa@baust.edu.bd
+- Qualification: MBA (Marketing), BBA (Marketing)
+
+Accountant
+- Name: Bulbul Islam
+- Phone: 01715499930
+- Email: bulbulraselbd@gmail.com
+- Qualification: BBS (Hon's), MBS
+
+Assistant Accountant
+- Name: Md Humaun Kabir
+- Phone: 01721857397
+- Email: humaunk748@gmail.com
+- Qualification: BA (Pass)
+
+Assistant Accountant
+- Name: Sgt (Clk) Md Wahidur Nabi (Retd)
+- Phone: 01914118295
+- Email: wahidnabi1974@gmail.com
+
+Cashier
+- Name: Md Sheikh Shamimul Islam
+- Phone: 01811399671
+- Email: shamimshehan@gmail.com
+- Qualification: B Com
+
+Messenger
+- Name: Md Shariful Islam
+- Phone: 01723805692
+- Email: sharifis1985@gmail.com
+
+OFFICE OF THE REGISTRAR
+------------------------
+
+Registrar (BAUST)
+- Name: Col Chowdhury Saif Uddin Kawsar, PBGM, Sigs (LPR)
+- Phone: 01769675551 (Office)
+- Email: registrar@baust.edu.bd (Office)
+
+Additional Registrar (In-Charge)
+- Name: Major Nasim Hossain, Inf (Retd)
+- Phone: 01769675579
+- Email: addl_registrar@baust.edu.bd (Official)
+- Personal Email: nasimhossain3260@gmail.com
+- Qualification: MBA (HR)
+
+Deputy Director (HR)
+- Name: Md. Atiqur Rahman
+- Phone: 01711573041
+- Email: atiq1972@yahoo.com
+- Qualification: LL.B (Hons), LL.M
+
+Deputy Registrar (Academic)
+- Name: Md. Kazi Nazmul Haque
+- Qualification: MSS (Pub Ad, IU), MBA, HRM, M.Phil, BRUR
+- Phone: 01769-675554 (Off), 01712-787063 (Pers)
+- Email: dr_academic@baust.edu.bd (Off), kazibaust@gmail.com (Pers)
+
+Deputy Registrar (Admin)
+- Name: Md. Rustom Ali
+- Phone: 01714229643
+- Email: deputy_registrar@baust.edu.bd (Official)
+- Personal Email: rustomdu87@gmail.com
+- Qualification: BSS (Hons), MSS, DU
+
+Medical Officer
+- Name: Fowzia Jahan
+- Phone: 01717415380
+- Email: fowzia39th@gmail.com
+- Qualification: MBBS, DMUD
+
+Information Officer
+- Name: Md. Shah Alam
+- Phone: 01769-675588
+- Email: info.officer@baust.edu.bd
+- Qualification: LLB(Hons.), LLM (International Law) University of Rajshahi
+
+Assistant Network Engineer
+- Name: Md. Alamgir Hoque
+- Qualification: B.Sc in Computer Science and Engineering, Master of Business Administration
+- Phone: 01716-460776
+- Email: alamgir@baust.edu.bd
+
+Assistant Software Engineer
+- Name: Md. Asif Iqbal
+- Phone: 01725215111
+- Email: asif.ase@baust.edu.bd
+- Qualification: B.Sc in Computer Science and Engineering
+
+Office Supervisor
+- Name: Kazi Md. Ahsanuzzaman
+- Phone: 8801779410456
+- Email: ahsanzaman28@gmail.com
+- Qualification: B. Pharm (Hon's)- State University of Bangladesh
+
+PA to Registrar
+- Name: Al Mohid
+- Phone: 8801758855949
+- Email: mohidudcbaust@yahoo.com
+- Qualification: B.Com- National University
+
+Senior Office Assistant
+- Name: Sgt BM Rafiqul Islam (Retd)
+- Phone: 8801712353981
+- Email: bmrafique.baust.sdp@gmail.com
+
+Sub Assistant Engineer
+- Name: Miraz Hossain
+- Phone: 01306769300
+- Email: mirajhossain01306769300@gmail.com
+- Qualification: Diploma In Civil Engineering
+
+IT Technician
+- Name: Md. Emon Mia
+- Phone: 01761863093
+- Email: marufjahanemon@gamil.com
+- Qualification: BBS- National University
+
+Academic Support Supervisor
+- Name: Shaiid Md. Sadakatul Bari
+- Phone: +8801701655559
+- Email: shaiidbari@gmail.com
+- Qualification: B.com (Hon's)- National University
+
+Store Man
+- Name: Md. Abu Toiab
+- Phone: 8801710139371
+- Email: abutoiab1993@gmail.com
+- Qualification: BA (Fazil)- Islamic University, Kushtia
+
+Medical Assistant
+- Name: Sgt Md. Mozaffor Hossain (Retd)
+- Phone: 8801712645975
+- Email: mujafforscc@gmail.com
+- Qualification: Diploma in nursing 4 Years
+
+Nurse (Medical centre)
+- Name: Lamia Aktar Limu
+- Phone: 01749-898473
+- Email: limuaktar9@gmail.com
+- Qualification: Diploma in Nursing Science and Midwifery
+
+Nurse (Medical centre)
+- Name: Halima Khatun Shuravi
+- Phone: 01755-249857
+- Email: halimasurovi956@gmail.com
+- Qualification: B. Sc in Nursing
+
+Security Supervisor
+- Name: Sgt Md. Abdul Hamid (Retd)
+- Phone: 01740356249
+
+Security In-Charge
+- Name: Cpl Md. Mamunur Rashid (Retd)
+- Phone: 01719072822
+
+Computer Operator
+- Name: Razia Sumi
+- Phone: 8801950690433
+- Email: raziasumi61@gmail.com
+- Qualification: BBS- National University
+
+Academic Support Assistant (ASA)
+- Name: Mst. Rashida Begum
+- Phone: +8801785379849
+- Email: brashida773@gmail.com
+- Qualification: BSS- National University
+
+Electrician
+- Name: Md. Noman
+- Phone: 01724949900
+
+Book Sorter
+- Name: Md.Taleb
+- Phone: 01723684844
+- Email: talebbaust@gmail.com
+- Qualification: H.S.C
+
+Carpenter
+- Name: Md.Nazmul
+- Phone: 01729-888609
+- Email: nazmulislam9198@gmail.com
+
+Office Assistant
+- Name: Md. Arif Hossain
+- Phone: 01775030600
+- Email: arifhossainsdp1@gmail.com
+- Qualification: Masters of Business Studies
+
+OFFICE OF THE CONTROLLER OF EXAMINATIONS
+-----------------------------------------
+
+Controller of Examinations
+- Name: Lt Col Syed Salahuddin Nayan, BGOM, psc, Inf
+- Phone: +8801769-675555 (Office), +8801713164801 (Personal)
+- Email: controller@baust.edu.bd, colonelsalahuddin@gmail.com
+- Qualification: MDS (Strategy), MSS (Criminology & Criminal Justice), DU, MSS(HR), JU
+
+Deputy Controller of Examinations
+- Name: Muhammad Solaiman
+- Phone: 01911368275
+- Email: deputy_controller@baust.edu.bd, solaimandubd@gmail.com
+- Qualification: B.A.(Hons), DU; MBA (HRM), HSTU
+
+Assistant Controller of Examination
+- Name: S M Sayed Bin Shafi
+- Phone: 01722006998
+- Email: sayed@baust.edu.bd
+- Qualification: Bachelor of Pharmacy and Master of Pharmacy (UODA)
+
+Section Officer
+- Name: Md. Nazrul Islam
+- Phone: 01795741085
+- Email: nazrulexam@baust.edu.bd
+- Qualification: BSS, MSS (Economics), MBA (Finance), BUBT
+
+Assistant Officer
+- Name: Md. Asif Hossain
+- Phone: 01719207069
+- Email: asifhossain@baust.edu.bd (off.), engrmdasifhossain@gmail.com (per.)
+- Qualification: B.Sc. (Engg) in CSE (BAUST), M.Sc. (Engg) in CSE (IU)
+
+Assistant Officer
+- Name: Guljar Hossan
+- Phone: 01737926985
+- Email: udcbaust985@gmail.com
+- Qualification: BSS (Degree), EMSS (ISLM), Rajshahi University (Continue)
+
+Computer Operator
+- Name: Md. Nabir Hossain
+- Phone: 01773828779
+- Email: nabir664.nh@gmail.com
+- Qualification: BSS (Pass)
+
+Dispatch Rider
+- Name: Md. Atiqul Islam
+- Phone: +8801982231823
+
+Office Assistant
+- Name: Md. Insanur Rahman
+- Phone: 01721406008
+- Qualification: B.S.S
+
+DEANS OF FACULTIES
+------------------
+
+Dean, Faculty of ECE
+- Name: Brig Gen Mohammad Mobarak Hossain Majumder, psc
+- Phone: 01769675550
+- Email: dean_ece@baust.edu.bd
+- Qualification: B.Sc. & M.Sc. in Mechanical Engineering (ME), BUET
+
+Dean, Faculty of Business Studies
+- Name: Professor Dr. Md. Shah Alam
+- Phone: 01769662723
+- Email: dean_bs@baust.edu.bd
+- Qualification: B.Com (Hons) in Accounting, M.Com in Accounting, PhD in Commerce
+
+Professor & Dean, Faculty of Science & Humanities
+- Name: Professor Md. Jahurul Islam
+- Phone: 01717142817
+- Email: dean_sh@baust.edu.bd
+- Qualification: B.A. (Hons.), & M.A. in English, M. Phil
+
+Professor (IPE) & Dean, Faculty of ME
+- Name: Prof. Dr. Imtiaz Ahmed Choudhury
+- Phone: +8801769675557 (Office), +8801726644025 (Personal)
+- Email: dean_me@baust.edu.bd
+- Qualification: B.Sc Engg. (BUET), M.Eng. (AIT), M.Sc. (USA), Ph.D (Ireland)
+
+Dean (In-Charge), Faculty of CE
+- Name: Associate Professor Dr. Md. Mahmudul Hasan
+- Phone: 01769-662720
+- Email: dean_ce@baust.edu.bd
+- Qualification: B.Sc Engg.(Civil), KUET, M. Engg & PhD (Civil & Environmental Engg.) Ritsumeikan
+
+PROCTOR OFFICE
+--------------
+
+Proctor
+- Name: Associate Professor Md. Zaber Hossain
+- Phone: 01769662706 (Official), 01922626111 (Personal)
+- Email: proctor@baust.edu.bd
+
+Assistant Proctor
+- Name: Assistant Professor Md. Mahmudul Adil
+- Phone: 01773421369
+- Email: adil@baust.edu.bd
+
+Assistant Proctor
+- Name: Lecturer Rakibul Hasan
+- Phone: 01746420879
+- Email: rakibulhasanbangla440@gmail.com
+
+Assistant Proctor
+- Name: Lecturer (Economics) Fatema Khatun
+- Phone: 01303124952
+- Email: fatemadba@baust.edu.bd
+
+Office Assistant
+- Name: Md. Zakerul Islum
+
+MLSS
+- Name: Mohammad Shakil Molla
+
+OFFICE OF THE ADVISER OF STUDENTS' WELFARE (ASW)
+-------------------------------------------------
+
+Adviser of Students' Welfare (ASW)
+- Name: Rakibul Islam
+- Designation: Assistant Professor & Head of the Dept.
+- Phone: 01723913191
+- Email: asw@baust.edu.bd
+
+Assistant Adviser of Students' Welfare (AASW)
+- Name: Goutam Saha
+- Designation: Assistant Professor, BBA
+- Phone: 01980389616
+- Email: sahagoutamcou@baust.edu.bd (Official)
+
+Assistant Adviser of Students' Welfare (AASW)
+- Name: Sifat Hossain
+- Designation: Assistant Professor, EEE
+- Phone: 01753685642
+- Email: sifat@baust.edu.bd
+
+ADMISSION OFFICE
+----------------
+
+Deputy Registrar (Academic)
+- Name: Md. Kazi Nazmul Haque
+- Phone: 01769675554
+- Email: dr_academic@baust.edu.bd, kazibaust@gmail.com
+- Qualification: MSS (Pub Ad, IU), MBA, HRM, M.Phil, BRUR
+
+Information Officer
+- Name: Md. Shah Alam
+- Phone: 01769-675588
+- Email: info.officer@baust.edu.bd
+- Qualification: LLB(Hons.), LLM (International Law), University of Rajshahi
+
+Assistant Office Secretary
+- Name: Julfiker Ali
+- Phone: 01786-278922
+- Email: julfiker@baust.edu.bd
+- Qualification: Masters (Kamil), Islamic Arabic University
+
+Computer Operator
+- Name: Syed Fokhrul Islam
+- Phone: 01737481689
+- Email: fakrulislambaust@gmail.com
+- Qualification: B.S.S (Pass)
+
+Storeman
+- Name: Md. Emdadul Haque
+- Phone: 01300129542
+- Email: emdadul@gmail.com
+- Qualification: H.S.C
+
+Messenger
+- Name: Most. Runa Parvin
+- Phone: 01724122021
+- Email: m.runparvin@gmail.com
+- Qualification: B.S.S (Pass)
+
+OFFICE OF THE LIBRARIAN
+-----------------------
+
+Librarian (In Charge)
+- Name: Professor Dr. S.M. Jahangir Alam
+- Phone: 01766128002
+- Email: jahangir@baust.edu.bd
+- Qualification: Ph.D. (Doctor of Engineering); Xiamen University (World rank~300), China
+
+Deputy Librarian
+- Name: Md. Saiful Alom Milon
+- Phone: 01769662699 (Off), 01992371721(Pers)
+- Email: central_library@baust.edu.bd, milonislm@gmail.com
+- Qualification: B.A. (Hons), DU, M.A. (Information Science & Library Management), DU, M.Phil (Pursuing)
+
+Cataloguer
+- Name: Farhana Zesmin
+- Phone: 01920358465
+- Email: zesmin91@gmail.com
+- Qualification: MA (Information Science & Library Management), DU
+
+Office Assistant (Library)
+- Name: Md. Abdullah Al Mamun
+- Phone: 01919172075
+- Email: mdabdullah389@gmail.com
+- Qualification: MSS (Information Science & Library Management), RU
+
+Book Sorter
+- Name: Md. Morshed
+- Phone: 01733449414
+- Email: morshedul602@gmail.com
+- Qualification: BSS (Pass)
+
+Library Attendant
+- Name: Md. Ramjan Ali
+- Phone: 01986532682
+- Qualification: S.S.C
+
+================================================================================
+12. HEAD OF DEPARTMENTS
+================================================================================
+
+CSE
+---
+Name: Dr. Md Nakib Hayat Chowdhury
+Designation: Associate Professor and Head
+Qualification: Research Fellow, ICTP, Trieste, Italy; PhD in Biomedical Engineering, UKM, Malaysia; M.Sc. and BSc. in CSE, RU
+Phone: 01703899959 (Personal), 01769675560 (HoD)
+Email: nakib@baust.edu.bd, nakib2025@gmail.com, hdcse@baust.edu.bd
+
+EEE
+---
+Name: Dr. Mst. Rubina Aktar
+Designation: Associate Professor and Head
+Qualification: PhD in EEE (RUET), M.Sc. Engg. in EEE (BUET), B.Sc. Engg. in EEE (RUET)
+Phone: +8801751185796 (Personal), +8801769675590 (Official)
+Email: hdeee@baust.edu.bd, rubina@baust.edu.bd
+
+ICT
+---
+Name: Engr. Md. Mamun Hossain
+Designation: Associate Professor and Head
+Qualification: Ph.D. Researcher, CSE, RUET; M.Sc. (Thesis) & B.Sc. (Engg.) in CSE, SUST
+Phone: 01769675577 (Off), 01717690847 (Per)
+Email: headict@baust.edu.bd, mhossain@baust.edu.bd, mamunsust12@gmail.com
+
+ME
+--
+Name: Prof. Dr. Imtiaz Ahmed Choudhury
+Designation: Professor and Head, Dean Faculty of ME
+Qualification: B.Sc. (ME), MEng, MS, PhD, CEng (UK)
+Phone: 01769675564 (office), 01726-644025
+Email: dean_me@baust.edu.bd
+
+IPE
+---
+Name: Md. Ariful Alam
+Designation: Assistant Professor and Head
+Qualification: B.Sc. Engg. in IPE (KUET), M.Sc. Engg. in IEM (KUET)
+Phone: +8801769675566 (Office), +8801729141848 (Personal)
+Email: headipe@baust.edu.bd, arif.ipe@baust.edu.bd
+
+CE
+--
+Name: Dr. Md. Mahmudul Hasan
+Designation: Associate Professor and Head, Dean (In-Charge) Faculty of CE
+Qualification: PhD and M.Engg. in Civil and Environmental Engg., Ritsumeikan University, Japan; B.Sc in Civil Engineering, KUET
+Phone: +8801769-662720 (Office), +8801712126942 (Personal)
+Email: headce@baust.edu.bd, drmhasan2014@gmail.com
+
+DBA
+---
+Name: Dr. Md. Anowar Hossain
+Designation: Associate Professor and Head
+Qualification: BBA & MBA (Finance & Banking), RU; PhD, RU
+Phone: +8801769675568 (Off), +8801710061174 (Per)
+Email: headbba@baust.edu.bd, anowar@baust.edu.bd, anowar.fnb@gmail.com
+
+AIS
+---
+Name: Rakibul Islam
+Designation: Assistant Professor and Head
+Qualification: BBA and MBA in Accounting & Information Systems (HSTU)
+Phone: +8801723913191
+Email: headais@baust.edu.bd, rakibul@baust.edu.bd, rakibulhstu@gmail.com
+
+ENGLISH
+-------
+Name: Md. Ashikullah
+Designation: Associate Professor and Head
+Qualification: MA in ELT (IML, DU)
+Phone: 01769662701, 01769662704 (Off), 01714285599 (Per)
+Email: hdenglish@baust.edu.bd, ashikullah@baust.edu.bd, ashikullahdu@gmail.com
+
+ARTS AND SCIENCE
+----------------
+Name: Md. Mizanur Rahman
+Designation: Associate Professor and Head
+Qualification: MS (Thesis), B.Sc (Hons) in Mathematics, University of Dhaka
+Phone: 01769662707 (Off), 01791040500 (Pers)
+Email: mathmasum@gmail.com, mizan@baust.edu.bd
+
+================================================================================
+13. DEPARTMENT FACULTY MEMBERS
+================================================================================
+
+DEPARTMENT OF CSE
+-----------------
+
+1. Professor Dr. S.M. Jahangir Alam
+   Designation: Professor
+   Qualification: Ph.D. (Doctor of Engineering); Xiamen University (World rank~300), China
+   Mobile: 01766128002
+   E-mail: jahangir@baust.edu.bd
+
+2. Dr. Engr. Mohammed Sowket Ali
+   Designation: Associate Professor
+   Qualification: PhD. and M.Engg. (South Korea), B.Sc. Engg., FIEB, FBCS, Senior Member-IACSIT, Member - IAENG
+   Mobile: +8801769662712 (Official), +8801791895371 (Personal)
+   E-mail: sowket@baust.edu.bd (Official), sowket@gmail.com (Personal)
+
+3. Engr. Md. Mamun Hossain
+   Designation: Associate Professor
+   Qualification: Ph.D. (Pursuing) in CSE, RUET, M.Sc. (Thesis) in CSE & B.Sc. Engg. in CSE, SUST
+   Mobile: 01769662713 (Off), +8801717690847
+   E-mail: mhossain@baust.edu.bd, mamunsust12@gmail.com
+
+4. Taher Muhammad Mahdee
+   Designation: Associate Professor
+   Qualification: M.Sc. (Thesis), B.Sc. (Hons) in CSE
+   Mobile: 01769662717 (Official), 01717244737 (Personal)
+   E-mail: mahdee@baust.edu.bd, t.mahdee@gmail.com
+
+5. Engr. Md. Al-Hasan
+   Designation: Assistant Professor
+   Qualification: PhD in CSE (Pursuing), M.Sc. in CSE, B. Sc. in CSE (CUET)
+   Mobile: +8801722-774004 (Pers)
+   E-mail: al-hasan@baust.edu.bd, hasan07cse@gmail.com
+
+6. Fatema Tuz Zohra
+   Designation: Assistant Professor
+   Qualification: B. Sc. Engg in CSE(CUET), M. Sc. in CSE (Jahangirnagar University)
+   Mobile: +8801728646700 (Pers)
+   E-mail: fatema@baust.edu.bd, fatematuzzohramishu@gmail.com
+
+7. Ashrafun Zannat
+   Designation: Assistant Professor
+   Qualification: M.Sc. in ICT (BUET); B.Sc. in CSE
+   Mobile: 01991553382
+   E-mail: spzannat@baust.edu.bd
+
+8. Ananna Hoque Shathi
+   Designation: Lecturer
+   Qualification: M.Sc. Engi (Ongoing) at RUET, B.Sc. in CSE (RUET)
+   Mobile: 01759585645
+   E-mail: anannahoque.cse10@gmail.com
+
+9. Md. Mahadi Hasan
+   Designation: Lecturer
+   Qualification: Ph.D. (Pursuing) in CSE, RUET M.Sc. Engg. in CSE, RUET B.Sc. Engg. in CSE, CUET
+   Mobile: 01303516351
+   E-mail: mahadihasan@baust.edu.bd (Official), mahadihasan1604020@gmail.com
+
+10. Md. Khalid Syfullah
+    Designation: Lecturer & Program Coordinator
+    Qualification: B.Sc. Engg. in CSE, KUET M.Sc. Engg. in CSE, KUET (ongoing)
+    Mobile: 01769675591 (Official), 01617070297 (Personal)
+    E-mail: khalidsyfullah@baust.edu.bd, khalidsyfullah3@gmail.com
+
+11. Munira Akter Mou
+    Designation: Lecturer
+    Qualification: M. Sc. Engg. In CSE, KUET (Pursuing), B.Sc. in CSE (BAUST)
+    Mobile: 01717016355
+    E-mail: mou@baust.edu.bd
+
+12. Anite Halim Sagor
+    Designation: Lecturer | Professor Under Officer (PUO), BNCC
+    Qualification: B.Sc. Engg. in CSE, BAUST; M.Sc. Engg. in CSE, KUET (Pursing)
+    Mobile: +88 01784055149 (Official), +88 01575602354 (Personal)
+    E-mail: ahsagor@baust.edu.bd (Official), anitehalim@gmail.com (Personal)
+
+13. Md Zahim Hassan
+    Designation: Lecturer
+    Qualification: M.Sc. (Engg.) in CSE, RUET(On-going); B.Sc. (Engg.) in CSE, KUET
+    Mobile: 01736393334
+    E-mail: zahimhassan@baust.edu.bd
+
+14. Engr. Rohul Amin
+    Designation: Lecturer
+    Qualification: M.Sc. Engg. in CSE, RUET(Persuing); B.Sc. Engg. in CSE, BAUST; AIEB: A/27423
+    Mobile: +88 01611187733 (Personal)
+    E-mail: rohul@baust.edu.bd (Official), labiddbzg@gmail.com (Personal)
+
+15. Shifa Tasmiah Tisha
+    Designation: Lecturer
+    Qualification: B.Sc. Engg. in CSE, CUET; M.Sc. Engg. in CSE, CUET(Ongoing)
+    Mobile: 01750391581
+    E-mail: stisha@baust.edu.bd
+
+16. Mst. Sabrina Zaman
+    Designation: Lecturer
+    Qualification: B.Sc. Engg. in CSE
+    Mobile: 01318049895
+    E-mail: sabrina@baust.edu.bd
+    SPECIAL NOTE: Course Advisor (19th Batch, Sec-C)
+
+17. Saad Ahmed
+    Designation: Lecturer
+    Qualification: M.Sc. (Engg.) in CSE, RUET(On-going); B.Sc. Engg. in CSE, BAUST
+    Mobile: +8801724-407189
+    E-mail: saadahmed@baust.edu.bd
+
+18. Md. Osama
+    Designation: Lecturer
+    Qualification: B.Sc. Engg. in CSE (CUET)
+    Mobile: 01994177881
+    E-mail: osama_cse@baust.edu.bd
+
+19. Nadim Reza
+    Designation: Lecturer
+    Qualification: B.Sc. in ECE, RUET; M.Sc. in CSE, RUET (On- going)
+    Mobile: +88 01770238732
+    E-mail: nadimreza@baust.edu.bd (Official), nrpnadim@gmail.com (Per)
+
+20. Sunayana Ghosh
+    Designation: Lecturer
+    Qualification: M.Sc. (Engg.) in CSE, RUET(On-going); B.Sc. Engg. in CSE (RUET)
+    Mobile: 01723911582
+    E-mail: sunayana@baust.edu.bd (Official); sg.sunayana101@gmail.com (Per)
+
+22. A K Z Rasel Rahman
+    Designation: Lecturer
+    Qualification: B.Sc. in CSE (KU); M.Sc. in CSE (KU)
+    Mobile: 01701133689
+    E-mail: rasel@baust.edu.bd(Official); rasel17716@cseku.ac.bd (Personal)
+
+23. Abdullah Al Asif
+    Designation: Lecturer
+    Qualification: B.Sc. Engg. in CSE, RUET
+    Mobile: 01343132304; 01836218266 (WhatsApp)
+    E-mail: aasif@baust.edu.bd (official); abdullahalasif2001.info@gmail.com (personal)
+
+24. Alifa Shanzidah Manarat
+    Designation: Lecturer
+    Qualification: B.Sc Engg in CSE (RUET)
+    Mobile: 01839073895
+    E-mail: manarat@baust.edu.bd
+
+25. S. M Golam Rifat
+    Designation: Lecturer
+    Qualification: B.Sc. Engg. in CSE, RUET
+    Mobile: 01759810833 (WhatsApp)
+    E-mail: golamrifat@baust.edu.bd(official); golamrifat@gmail.com(personal)
+
+26. Maskur Al Shal Sabil
+    Designation: Lecturer
+    Qualification: B.Sc(Engg) in ICT, MBSTU; M.Sc ongoing, MBSTU
+    Mobile: 01783015123
+    E-mail: maskur@baust.edu.bd; sabilhasan2018@gmail.com
+
+27. Roman Raihan
+    Designation: Lecturer
+    Qualification: M.Sc. (Engr.) in CSE, RUET (On-going); B.Sc. (Engr.) in CSE, SUST
+    Mobile: 01780972506, 01862277076 (WhatsApp)
+    E-mail: roman@baust.edu.bd (official), raihan.baust@gmail.com (personal)
+
+28. Md. Minhazul Islam
+    Designation: Lecturer
+    Qualification: BSc. in CSE, RUET MSc. in CSE, RUET (ongoing)
+    Mobile: 01714501019
+    E-mail: minhaz7553@gmail.com, minhaz@baust.edu
+
+29. Md Nahid Anam Opu
+    Designation: Lecturer
+    Qualification: B.Sc. in Electrical & Computer Engineering (ECE), RUET; MSc. in CSE, RUET (ongoing)
+    Mobile: 01701892939
+    E-mail: nahidanam.ece@gmail.com, opu@baust.edu.bd
+
+DEPARTMENT OF EEE
+-----------------
+
+1. Dr. Mst. Rubina Aktar
+   Designation: Associate Professor and Head
+   Qualification: PhD in EEE (RUET), M.Sc. Engg. in EEE (BUET), B.Sc. Engg. in EEE (RUET)
+   Mobile: +8801751185796 (Personal), +8801769675590 (Official)
+   E-mail: hdeee@baust.edu.bd, rubina@baust.edu.bd
+
+2. Muhammad Khairuzzaman
+   Designation: Assistant Professor
+   Qualification: MS in EE, Lamar University, TX, USA, B.Sc in EEE, BUET
+   Mobile: 01711505991
+   E-mail: mkhzaman@baust.edu.bd
+
+3. Mafin Muntasir Rahman
+   Designation: Assistant Professor
+   Qualification: B.Sc. in EEE (RUET)
+   Mobile: +8801762355745 (Official), +8801914254599 (Personal)
+   E-mail: mafin@baust.edu.bd
+
+4. Mst. Humayra Khanom
+   Designation: Assistant Professor
+   Qualification: B.Sc. in EEE (KUET), M.Sc. in EEE (KUET)
+   Mobile: 01619474749
+   E-mail: humayra.khanom@baust.edu.bd, humayrakhanom5918@gmail.com
+
+5. Md. Yah-Ya Ul Haque
+   Designation: Assistant Professor
+   Qualification: M.Sc. in EEE, RUET; B.Sc. in EEE, RUET
+   Mobile: 01746201738
+   E-mail: yahyahaque@baust.edu.bd (Official), yahyahaque133@gmail.com (Personal)
+
+6. Sifat Hossain
+   Designation: Assistant Professor
+   Qualification: B.Sc. Engg. in EEE (BAUST), M.Sc. Engg. in ECE (KUET)
+   Mobile: 01753685642
+   E-mail: sifat@baust.edu.bd (Official), sifatapon@yahoo.com (Personal)
+
+7. Nawshad Ahmed
+   Designation: Assistant Professor
+   Qualification: B.Sc. in EEE (RUET), M.Sc. in EEE (RUET)
+   Mobile: 01716438251 (Pers.)
+   E-mail: nawshad@baust.edu.bd
+
+8. Azra Sadia Sultana
+   Designation: Assistant Professor
+   Qualification: B. Sc in EEE, M. Sc in EEE
+   Mobile: 01912991530
+   E-mail: azra.sadia@baust.edu.bd
+
+9. Md. Shahriar Kabir
+   Designation: Assistant Professor & Program Coordinator
+   Qualification: M.S. in BMPT, DU; B.Sc. in EEE, KUET
+   Mobile: 01722667509
+   E-mail: mkabir@baust.edu.bd, dpceee@baust.edu.bd
+
+10. Shuvro Mondal
+    Designation: Lecturer
+    Qualification: M.Sc. in EEE (Ongoing, BUET), B.Sc. in EEE (BUET)
+    Mobile: +88 01521423591, +88 01734264621
+    E-mail: shuvromondal@baust.edu.bd, shuvromondal001@gmail.com
+
+11. Md. Mehedi Hasan
+    Designation: Lecturer
+    Qualification: M.Sc. in EEE, RUET (Ongoing); B.Sc. in EEE, RUET
+    Mobile: 01912108926
+    E-mail: mehedihasan_eee@baust.edu.bd, mehedihasanku68@gmail.com
+
+12. Md. Hasib Mahbub
+    Designation: Lecturer
+    Qualification: M.Sc. Engg. (EE), IUT (Ongoing); B.Sc. Engg. (EE), IUT
+    Mobile: 01795067203
+    E-mail: hasibmahbub@baust.edu.bd (Official), hasibmahbub@iut-dhaka.edu (Personal)
+
+13. Md Atiq Shariar
+    Designation: Lecturer
+    Qualification: B.Sc. in EEE, RUET
+    Mobile: 01835331811
+    E-mail: atiqizaz@gmail.com (personal), atiqizaz@baust.edu.bd (Official)
+
+14. Mahin Anjum
+    Designation: Lecturer
+    Qualification: B.Sc in EEE (BUET)
+    Mobile: 01601212792
+    E-mail: mahinanjum558@gmail.com
+
+15. Md. Nahid Hasan Shoaib
+    Designation: Lecturer
+    Qualification: M.Sc. in EEE, RUET (Ongoing); B.Sc. in EEE, RUET
+    Mobile: 01621253362
+    E-mail: nahidhasanshoaib@baust.edu.bd
+
+16. Tanmoy Pandey
+    Designation: Lecturer
+    Qualification: M.Sc. in EEE, RUET (Ongoing); B.Sc. in EEE, RUET
+    Mobile: 01521305067
+    E-mail: tanmoy@baust.edu.bd
+
+17. Thuifique Alam
+    Designation: Lecturer
+    Qualification: M.Sc. Engg. in EEE, KUET (Ongoing); B.Sc. Engg. in EEE, KUET
+    Mobile: +88 01823187014 (Official), +88 01581828658 (Personal)
+    E-mail: thuifique@baust.edu.bd (Official), alam1703033@gmail.com (Personal)
+
+DEPARTMENT OF ICT
+-----------------
+
+1. Brig Gen Mohammad Mobarak Hossain Majumder, psc
+   Designation: Dean, Faculty of Electrical and Computer Engineering (ECE)
+   Qualification: B.Sc. & M.Sc. in Mechanical Engineering (ME), BUET
+   E-mail: vc@baust.edu.bd
+
+2. Engr. Md. Mamun Hossain
+   Designation: Head, Department of ICT, Associate Professor, CSE
+   Qualification: Ph.D. Researcher, CSE, RUET; M.Sc. (Thesis) & B.Sc. (Engg.) in CSE, SUST
+   Mobile: 01769675577(Off), 01717690847(Per)
+   E-mail: headict@baust.edu.bd, mhossain@baust.edu.bd, mamunsust12@gmail.com
+
+3. Dr. Engr. Mohammed Sowket Ali
+   Designation: Associate Professor
+   Qualification: PhD. and M.Engg. (South Korea), B.Sc. Engg., FIEB, FBCS, Senior Member-IACSIT
+   Mobile: +8801769662712 (Official), +8801791895371 (Personal)
+   E-mail: sowket@baust.edu.bd (Official), sowket@gmail.com (Personal)
+
+4. Tasmim
+   Designation: Lecturer
+   Qualification: M.Sc. Engg. in CSE, RUET(On-going); B.Sc. Engg. in ECE (RUET)
+   Mobile: 01703830359
+   E-mail: tasmim@baust.edu.bd
+
+5. Md Abdun Noor Polok
+   Designation: Lecturer & Program Coordinator
+   Qualification: M. Sc. Engg. In CSE, KUET (Pursuing); BSc in ICE, BAUET
+   Mobile: 01521403890 (Whatsapp)
+   E-mail: poloknoor@baust.edu.bd (official), dpc.ict@baust.edu.bd, poloknoor06@gmail.com (personal)
+
+6. Asif Idris Tuhin
+   Designation: Lecturer
+   Qualification: M.Sc. Engg. in CSE, RUET (ongoing); B.Sc. Engg. in CSE, SUST
+   Mobile: 01787380880 (whatsapp)
+   E-mail: tuhin@baust.edu.bd (official), tuhin123000@gmail.com (personal)
+
+7. Tazrian Billah
+   Designation: Lecturer
+   Qualification: BSc in CSE, BAUST
+   Mobile: 01957721943
+   E-mail: tazrian@baust.edu.bd (official), tazrian.baust@gmail.com (personal)
+
+DEPARTMENT OF IPE
+-----------------
+
+1. Prof. Dr. Imtiaz Ahmed Choudhury
+   Designation: Professor and Dean, Faculty of ME
+   Qualification: B.Sc Engg. (BUET), M.Eng. (AIT), M.Sc. (USA), PhD, CEng (UK)
+   Mobile: +8801769675557 (Office), +8801726644025 (Personal)
+   E-mail: dean_me@baust.edu.bd
+
+2. Lt Col Prof. Dr. Md Shameem Reza (Retd)
+   Designation: Professor
+   Qualification: PhD (RU)
+   Mobile: +8801769662723
+   E-mail: treasurer@baust.edu.bd
+
+3. Md. Ariful Alam
+   Designation: Assistant Professor and Head
+   Qualification: B.Sc. Engg. in IPE (KUET), M.Sc. Engg. in IEM (KUET)
+   Mobile: +8801769675566 (Office), +8801729141848 (Personal)
+   E-mail: headipe@baust.edu.bd, arif.ipe@baust.edu.bd
+
+4. Md. Ragib Abid
+   Designation: Lecturer
+   Qualification: B.Sc in IPE (KUET), M.Sc in IPE (BUET) (Pursuing)
+   Mobile: 01819754317
+   E-mail: abid@baust.edu.bd, dpcipe@baust.edu.bd
+
+5. Md. Mahabub-A-Khoda
+   Designation: Lecturer
+   Qualification: B.Sc. Engg. in IPE (KUET), M.Sc in IPE (RUET) (Pursuing)
+   Mobile: 01717977861
+   E-mail: mahabub_ipe@baust.edu.bd
+
+6. Md. Mushiur Rahman
+   Designation: Lecturer
+   Qualification: B.Sc in IPE (RUET), M.Sc in IPE (RUET) (Pursuing)
+   Mobile: 01568796159
+   E-mail: mushiur4582@baust.edu.bd
+
+7. Hrittik Mural
+   Designation: Lecturer & Program Coordinator
+   Qualification: B.Sc Engg in MIE (CUET), M.Sc in ME (CUET) (Pursuing)
+   Mobile: 01786106369
+   E-mail: hrittikmuralarnab1998@gmail.com
+
+8. Md. Injamamul Haque Protyai
+   Designation: Lecturer
+   Qualification: B.Sc in IPE, M.Sc in IPE (RUET) (Pursuing)
+   Mobile: 01533573091
+   E-mail: injamamul@baust.edu.bd
+
+9. Abdul Halim
+   Designation: Lecturer
+   Qualification: B.Sc. Engg. in IPE (RUET), M.Sc in IPE (RUET) (Pursuing)
+   Mobile: 01869267325
+   E-mail: abdulhalim@baust.edu.bd
+
+10. Parth Pratim Das Pritam
+    Designation: Lecturer
+    Qualification: B.Sc. Engg. in IPE (RUET), M.Sc in IPE (RUET) (Pursuing)
+    Mobile: +8801788627878
+    E-mail: parth.ipe.36@gmail.com
+
+11. Nadim Mahmud
+    Designation: Lecturer
+    Qualification: B.Sc. Engg. in IPE (RUET), M.Sc in IPE (RUET) (Pursuing)
+    Mobile: 01309658669
+    E-mail: nadimmahmudnayan27.ipe@gmail.com
+
+DEPARTMENT OF ME
+----------------
+
+1. Prof. Dr. Imtiaz Ahmed Choudhury
+   Designation: Head, Dept. of ME, and Dean, Faculty of ME
+   Qualification: B.Sc. (ME), MEng, MS, PhD, CEng (UK)
+   Mobile: 01769675564(office), 01726-644025, Room- 101 (B)
+   E-mail: dean_me@baust.edu.bd
+
+2. Dr. Md. Syful Islam
+   Designation: Professor
+   Qualification: B.Sc. Engg. (BUET); M.Sc. in Mechanical Engineering, Tuskegee University, Tuskegee
+   Mobile: 01747107765(personal), Room- 101 (C)
+
+3. Tasfia Tasnim
+   Designation: Assistant Professor
+   Qualification: B.Sc. Engg. in ME (CUET), M.Sc. Engg. in ME (CUET)
+   Mobile: 01759805908, Room-101 (D)
+   E-mail: tasfia@baust.edu.bd
+
+4. Md. Mahmudul Adil
+   Designation: Assistant Professor
+   Qualification: B.Sc. in Mechanical Engineering, CUET; M.Sc. in Mechanical Engineering, CUET
+   Mobile: 01773421369, Room- 101 (A)
+   E-mail: adil@baust.edu.bd (Off), mahmuduladil95@gmail.com (Per)
+
+5. Md. Waheduzzaman Basunia Nouman
+   Designation: Assistant Professor
+   Qualification: B. Sc. Engg. in ME (BUET), M.Sc. Engg. in ME (BUET)
+   Mobile: 01773911016, Room-101 (A)
+   E-mail: nouman@baust.edu.bd
+
+6. Md. Abu Daud
+   Designation: Lecturer
+   Qualification: B.Sc. Engg. in ME (RUET), M.Sc. Engg. in ME, (RUET)-Ongoing
+   Mobile: 01761683344, Room-101 (A)
+   E-mail: daud.me@baust.edu.bd
+
+7. Md. Iqbal Hossain Shuvo
+   Designation: Lecturer
+   Qualification: B.Sc in Mechanical Engineering, KUET
+   Mobile: 01723569026, Room-101(E)
+   E-mail: iqbalshuvo_me@baust.edu.bd (Official), mdiqbalhossain061@gmail.com (Personal)
+
+8. Md. Abdullah Al Mohotadi
+   Designation: Lecturer & Program Coordinator
+   Qualification: B.Sc in Mechanical Engineering (KUET); M.Sc in Mechanical Engineering (KUET) [Ongoing]
+   Mobile: 01774658810, Room-101 (E)
+   E-mail: mohotadi@baust.edu.bd, dpcme@baust.edu.bd
+
+9. Md. Sohanur Rahman
+   Designation: Lecturer
+   Qualification: B.Sc in Mechanical Engg. (CUET) M.Sc in Mechanical Engg. (CUET), Ongoing
+   Mobile: 01740067157,Room-101 (E)
+   E-mail: mdsohanurrahman.mri@gmail.com, sohan@baust.edu.bd
+
+10. Kabid Ahmed Akib
+    Designation: Lecturer
+    Qualification: B.Sc in Mechanical Engg. (RUET)
+    Mobile: 01937711667, Room-101 (E)
+    E-mail: kabidahmed@baust.edu.bd (Official)
+
+11. Iqbal Nafis Razee
+    Designation: Lecturer
+    Qualification: B.Sc in Mechanical Engineering(BUET)
+    Mobile: 01300560747,Room No-101 (F)
+    E-mail: iqbal.nafis74@baust.edu.bd
+
+12. Md. Tahmid Anjum Khan
+    Designation: Lecturer
+    Qualification: B.Sc in Mechanical Engineering (BUET)
+    Mobile: 01303-137882, Room No-100(E)
+    E-mail: tahmid.khan@baust.edu.bd
+
+DEPARTMENT OF CE
+----------------
+
+1. Dr. Md. Mahmudul Hasan
+   Designation: Dean (In-Charge) of the Faculty of Civil Engineering & Associate Professor and Head
+   Qualification: PhD and M.Engg. in Civil and Environmental Engg., Ritsumeikan University, Japan; B.Sc in Civil Engineering, KUET
+   Mobile: +8801769-662720 (Office), +8801712126942 (Personal)
+   E-mail: headce@baust.edu.bd, drmhasan2014@gmail.com
+
+2. Kh. Shihab Uddin Ahmed
+   Designation: Lecturer
+   Qualification: B.Sc in Civil Engineering, BUET
+   Mobile: +8801763988745
+   E-mail: kh.shihab@baust.edu.bd
+
+3. Md. Faysal Kabir
+   Designation: Lecturer
+   Qualification: MSc in Civil and Transportation Engineering, BUET
+   Mobile: +8801706649065
+   E-mail: faysalkabir.ce@baust.edu.bd
+
+4. Habibur Rahman
+   Designation: Lecturer
+   Qualification: M.Sc. in Civil and Environmental Engineering (Ongoing), KUET
+   Mobile: +8801767834616
+   E-mail: habibce@baust.edu.bd
+
+5. Md. Jahangir Alam
+   Designation: Lecturer & Program Coordinator
+   Qualification: B.Sc in Civil Engineering, KUET
+   Mobile: +8801717657540
+   E-mail: dpcce@baust.edu.bd (Program Coordinator), jahangir_ce@baust.edu.bd (Official)
+
+6. Ahasanul Haque Hashib
+   Designation: Lecturer
+   Qualification: M.Sc in Civil and Transportation Engineering (Ongoing), BUET; RUET
+   Mobile: +8801409531383
+   E-mail: hashib_ce@baust.edu.bd (Official), hashib.kuet.ce@gmail.com (Personal)
+
+7. Sabiha Tasnim Rifa
+   Designation: Lecturer
+   Qualification: M.Sc in Civil and Environmental Engineering (Ongoing), RUET
+   Mobile: +8801754009237
+   E-mail: strifa@baust.edu.bd (Official), rifasabiha0000@gmail.com (Personal)
+
+8. Faisal Ahmed
+   Designation: Lecturer
+   Qualification: M.Sc in Civil and Geotechnical Engineering (Ongoing), BUET
+   Mobile: +8801746390870 (Official & Personal)
+   E-mail: faisalahmed_ce@baust.edu.bd (Official), faisalkuet1845@gmail.com (Personal)
+
+9. Anzuman Ara Priya
+   Designation: Lecturer
+   Qualification: M.Sc in Civil and Structural Engineering (Ongoing), BUET
+   Mobile: +8801724902127
+   E-mail: anzumanara@baust.edu.bd
+
+10. Md. Sohrab Mia
+    Designation: Lecturer
+    Qualification: M.Sc in Civil and Structural Engineering (Ongoing)
+    Mobile: +8801576619671 (Official), +8801747973693 (Personal)
+    E-mail: sohrab@baust.edu.bd (Official), sohrabafrad@gmail.com (Personal)
+
+11. Md. Aiman Wasee
+    Designation: Lecturer
+    Qualification: B.Sc in Civil Engineering, KUET
+    Mobile: +801744984093 (Official), +8801744984093 (Personal)
+    E-mail: aiman@baust.edu.bd (Official), aiman.wasee@gmail.com (Personal)
+
+DEPARTMENT OF ENGLISH
+---------------------
+
+1. Professor Md. Jahurul Islam
+   Designation: Professor & Dean
+   Qualification: B.A. (Hons.), & M.A. in English, M. Phil
+   Mobile: 01717142817
+   E-mail: jislam@baust.edu.bd
+
+2. Md. Ashikullah
+   Designation: Associate Professor & Head
+   Qualification: MA in ELT (IML, DU)
+   Mobile: 01769662701, 01769662704 (Off), 01714285599 (Per)
+   E-mail: hdenglish@baust.edu.bd, ashikullah@baust.edu.bd, ashikullahdu@gmail.com
+
+3. Most. Mushfeka Zannat
+   Designation: Assistant Professor
+   Qualification: B.A.(Hon's) in English, M.A. in Applied Linguistics and ELT, JU
+   Mobile: 01750452921
+   E-mail: mushfekazannat14@gmail.com, mushfeka28@baust.edu.bd(official)
+
+4. Md. Golam Shahariar
+   Designation: Assistant Professor
+   Qualification: BA (Hons.) in English; MA in English, JnU, Dhaka
+   Mobile: 0177 36 09 216
+   E-mail: shahariareng@baust.edu.bd
+
+5. Md. Al-Amin
+   Designation: Lecturer
+   Qualification: MA in ELTAL, BA (Hons) in English, BUP
+   Mobile: 01812069242
+   E-mail: mdalamin@baust.edu.bd (Official), alaminamin.bup@gmail.com (Personal)
+
+6. Aftab Ur Rahaman Zahin
+   Designation: Lecturer & Dept. Program Coordinator(DPC)/G2
+   Qualification: B.A.(Hons.) in English, BUP; M.A. in English, BUP
+   Mobile: 01741-774428
+   E-mail: azahin@baust.edu.bd
+
+7. Md. Maruf Hossan
+   Designation: Lecturer
+   Qualification: B.A.(Hons.) in English, JU; M.A.(ALELT), JU
+   Mobile: 01676270571
+   E-mail: maruf@baust.edu.bd
+
+8. Tahera Zobaida Maliha
+   Designation: Lecturer
+   Qualification: BA (Hons) in English, MA in Applied Linguistics and ELT
+   Mobile: 01793590803
+   E-mail: tzmaliha@baust.edu.bd, tzmaliha.m@gmail.com
+
+9. Farhin Faruque
+   Designation: Assistant Professor
+   Qualification: BA (Hons) and MA in English, RU
+   Mobile: 01701042657
+   E-mail: farhin.disha13@baust.edu.bd
+
+10. Jannatul Ferdous
+    Designation: Lecturer
+    Qualification: BA(Hons) in English, BAUST; MA in ELT, DIU; MA in TESOL, DU
+    Mobile: 01701559894
+    E-mail: jannatulferdousmou1998@gmail.com
+
+11. Md. Eshan Shahriar
+    Designation: Lecturer
+    Qualification: BA (Hons.) in English, RU; MA in ELT, JU
+    Mobile: 01785538463
+    E-mail: eshanshahriarroop@gmail.com
+
+12. Mst. Tahora Khatun
+    Designation: Lecturer
+    Qualification: BA (Hons.) in English; MA in English, SUST
+    Mobile: 01767518820
+    E-mail: tohurakhatun4@gmail.com
+
+13. Bipploby Guha Tuktuki
+    Designation: Lecturer
+    Qualification: BA (Hons) and MA in English Literature and Cult. Stud., GSTU
+    Mobile: 01317368636
+    E-mail: bipplobyguha100@gmail.com
+
+14. Maliha Mouly
+    Designation: Lecturer
+    Qualification: BA (Hons) and MA in English Literature, RU
+    Mobile: 01314156348
+    E-mail: malihamouly20@gmail.com
+
+15. Rakhi Das Gupta
+    Designation: Lecturer
+    Qualification: BA (Hons.), MA in English, NSTU
+    Mobile: 01722453558
+    E-mail: rakhidas@baust.edu.bd, rakhidasgupta7000@gmail.com
+
+16. K. M. Salman Samil Sumon
+    Designation: Lecturer
+    Qualification: B.A. (Hons.) in English & M.A. in ELTAL, BUP
+    Mobile: +8801754001361 (Personal)
+    E-mail: salman@baust.edu.bd (Official), salmansamilsumon@gmail.com (Personal)
+
+17. Tamanna Sharmin
+    Designation: Lecturer
+    Qualification: M.A. in ELT, BAUST
+    Mobile: 01794972984
+    E-mail: tamanna@baust.edu.bd
+
+18. Nishat Tasneem
+    Designation: Lecturer
+    Qualification: M.A in ELT
+    Mobile: 01737909192
+    E-mail: nishat@baust.edu.bd, nishattasneem75@gmail.com
+
+19. Riyad Ahamed
+    Designation: Lecturer
+    Qualification: B.A.(Hons.) in English, M.A. in ELT, BAUST
+    Mobile: 01316020390
+    E-mail: riyad@baust.edu.bd (Official), riyadahmed006@gmail.com (Personal)
+
+DEPARTMENT OF BUSINESS ADMINISTRATION (DBA)
+-------------------------------------------
+
+1. Dr. Md. Shah Alam
+   Designation: Professor
+   Qualification: B.Com (Hons) in Accounting, M.Com in Accounting, PhD in Commerce
+   Mobile: +8801714425307
+   E-mail: shahmdalam@yahoo.com
+
+2. Dr. Md. Anowar Hossain
+   Designation: Associate Professor & Head
+   Qualification: BBA & MBA (Finance & Banking), RU; PhD, RU
+   Mobile: +8801769675568 (Off), +8801710061174 (Per)
+   E-mail: headbba@baust.edu.bd (Official), anowar@baust.edu.bd (Official), anowar.fnb@gmail.com (Personal)
+
+3. Md. Zaber Hossain
+   Designation: Associate Professor & (MBA Program Coordinator)
+   Qualification: BBA and MBA in Marketing (Rajshahi University)
+   Mobile: +8801922626111
+   E-mail: hossain.zaber478@gmail.com, dpcmba@baust.edu.bd
+
+4. Goutam Saha
+   Designation: Assistant Professor in Marketing
+   Qualification: BBA and MBA in Marketing, Comilla University
+   Mobile: 01980389616
+   E-mail: sahagoutamcou@baust.edu.bd (Official), goutamsahacou@gmail.com (Personal)
+
+5. Shamima Islam
+   Designation: Assistant Professor
+   Qualification: BBA, MBA in Finance (HSTU)
+   Mobile: 01746261308
+   E-mail: bonihstu@gmail.com
+
+6. Samiya Bint Halim
+   Designation: Assistant Professor (Marketing)
+   Qualification: MBA & BBA (Marketing), University of Dhaka
+   Mobile: 01683326275
+   E-mail: samiya177mkt@gmail.com & samiya.halim@baust.edu.bd
+
+7. Md. Rabiul Awal
+   Designation: Assistant Professor in Management
+   Qualification: BBA in Management & MBA in Human Resource Management, University of Dhaka
+   Mobile: 01740299855
+   E-mail: rabiul.ru.mgt18@baust.edu.bd
+
+8. Md. Shahadat Hossain
+   Designation: Assistant Professor in Management
+   Qualification: BBA in Management Studies & MBA in Human Resource Management, Jahangirnagar University
+   Mobile: 01856563486
+   E-mail: shahadatju343@baust.edu.bd
+
+9. Nazmun Nahar Shova
+   Designation: Assistant Professor (Finance)
+   Qualification: BBA and MBA (Banking & Insurance), RU
+   Mobile: 01789908628
+   E-mail: nnshova@baust.edu.bd
+
+10. Fatema Khatun
+    Designation: Lecturer (Economics)
+    Qualification: BSS (Economics) & MSS (Economics), KU
+    Mobile: 01303124952
+    E-mail: fatemadba@baust.edu.bd (Official), laizu.ku18@gmail.com (Personal)
+
+11. Sorna Khan
+    Designation: Lecturer in Finance
+    Qualification: BBA & MBA, Bangladesh Army University of Science and Technology (BAUST), Saidpur
+    Mobile: 01303231318
+    E-mail: sorna@.baust.edu.bd (Official), sornakhan323@gmail.com (Personal)
+
+12. Mridul Kanti Das
+    Designation: Lecturer (Management)
+    Qualification: BBA (Management) & MBA (Human Resource Management), Comilla University
+    Mobile: 01754803230
+    E-mail: mridulkanti2012@gmail.com
+
+13. Md. Alomgir Hossen
+    Designation: Lecturer in Management & Program Coordinator
+    Qualification: BBA (Management) & MBA (Human Resource Management), University of
+    Mobile: 01519-609033
+    E-mail: alomgir@baust.edu.bd
+
+14. Momtaj Parvin
+    Designation: Lecturer (Finance)
+    Qualification: BBA & MBA (Finance and Banking), Pabna University of Science and Technology
+    Mobile: +8801719898634
+    E-mail: momtaj@baust.edu.bd
+
+15. Md. Ridoy Hasan
+    Designation: Lecturer (Management)
+    Qualification: BBA (Management) & MBA (HRM), RU
+    Mobile: 01701057975
+    E-mail: ridoydba@baust.edu.bd, dpcbba@baust.edu.bd
+
+16. Farhana Rahman
+    Designation: Lecturer (Management)
+    Qualification: BBA & MBA in Management, RU
+    Mobile: 01785493421
+    E-mail: farhanadba@baust.edu.bd (Official), farhana.rumgt@gmail.com (Personal)
+
+DEPARTMENT OF ACCOUNTING AND INFORMATION SYSTEMS (AIS)
+------------------------------------------------------
+
+1. Dr. Md. Shah Alam
+   Designation: Professor
+   Qualification: B.Com (Hons) in Accounting, M.Com in Accounting, PhD in Commerce
+   Mobile: 01769662723 (Off)
+   E-mail: shahmdalam@yahoo.com
+
+2. Rakibul Islam
+   Designation: Assistant Professor and Head
+   Qualification: BBA and MBA in Accounting & Information Systems (HSTU)
+   Mobile: +8801723913191
+   E-mail: headais@baust.edu.bd, rakibul@baust.edu.bd, rakibulhstu@gmail.com
+
+3. Md. Azmir Sharif
+   Designation: Assistant Professor
+   Qualification: BBA and MBA in Accounting & Information Systems (HSTU)
+   Mobile: +8801719251411
+   E-mail: azmir@baust.edu.bd
+
+4. Munira Joynob Nur
+   Designation: Lecturer
+   Qualification: BBA and MBA in Accounting & Information Systems, Pabna University of Science and
+   Mobile: 01868310027 (Personal)
+   E-mail: munirajoynob27pabna@gmail.com (Personal), munirajoynob@baust.edu.bd
+
+5. Amena Akter
+   Designation: Lecturer
+   Qualification: BBA and MBA in Accounting & Information Systems, Comilla University
+   Mobile: 01837848211 (Personal)
+   E-mail: amenaakter961@gmail.com (Personal), amena@baust.edu.bd (Official)
+
+6. Md. Kamrul Hassan Tuhin
+   Designation: Lecturer
+   Qualification: BBA and MBA in Accounting & Information Systems, Comilla University
+   Mobile: 01690090415 (Personal)
+   E-mail: kamrultuhin@baust.edu.bd
+
+7. Rezaul Karim
+   Designation: Lecturer
+   Qualification: BBA and MBA in Accounting & Information Systems (HSTU)
+   Mobile: +8801718061296; +8801571420501
+   E-mail: rezaul@baust.edu.bd (Official); rezaulkarimhstu174@gmail.com (Personal)
+
+8. Md. Saifur Rahman
+   Designation: Lecturer
+   Qualification: BBA and MBA in Accounting & Information Systems, Noakhali Science and Technology
+   Mobile: +8801670521079
+   E-mail: saifur@baust.edu.bd (Official); mdsaifurrahman079@gmail.com (Personal)
+
+9. Md. Hafizul Islam
+   Designation: Lecturer & Program Coordinator
+   Qualification: BBA & MBA (Accounting and Information System), University of Barishal
+   Mobile: 01722268977
+   E-mail: hafizul013ais@baust.edu.bd (Official); islamhafiz45@gmail.com (Personal)
+
+================================================================================
+14. STUDENT LIST (19TH BATCH, SECTION C)
+================================================================================
+
+IMPORTANT: Always mask student IDs when displaying - show only last 3 digits 
+with asterisks for the rest (e.g., ******126)
+
+Student ID: 0802420205101100 | Name: NAFIS HASAN ABID | Masked: ******100
+Student ID: 0802420105101101 | Name: MST. MOMITA JAMAN MOMO | Masked: ******101
+Student ID: 0802420105101102 | Name: MST. MARJIA MEHEJABIN | Masked: ******102
+Student ID: 0802420405101103 | Name: MD. SAYADUL ISLAM | Masked: ******103
+Student ID: 0802420205101105 | Name: ALL SHAHRIAR RAHMAN ROKON | Masked: ******105
+Student ID: 0802420405101106 | Name: MD. AYMAN ABID SEYAM | Masked: ******106
+Student ID: 0802420105101107 | Name: MOST. FARHA TABASSUM ANANNA | Masked: ******107
+Student ID: 0802420105101108 | Name: MOST. FARIHA TABASSUM ANU | Masked: ******108
+Student ID: 0802420105101109 | Name: NUSRAT JAHAN JUI | Masked: ******109
+Student ID: 0802420205101112 | Name: SHAH MD. AL JUNAID | Masked: ******112
+Student ID: 0802420105101113 | Name: SHIDRATUL MUNTAHA | Masked: ******113
+Student ID: 0802420105101114 | Name: FARHANA BENTE HUSSIN SAYDA | Masked: ******114
+Student ID: 0802420105101115 | Name: JANNATUL MAOWA JEBA | Masked: ******115
+Student ID: 0802420205101116 | Name: MD. SIMUM HASSAN SIYAM | Masked: ******116
+Student ID: 0802420405101118 | Name: MD. SANZID HASAN | Masked: ******118
+Student ID: 0802420105101119 | Name: ASHRIA JAHAN PRIONTY | Masked: ******119
+Student ID: 0802420105101120 | Name: MUNTASERA TABASSUM LOPA | Masked: ******120
+Student ID: 0802420105101122 | Name: MST. RIFA TAMANNA | Masked: ******122
+Student ID: 0802420205101123 | Name: MD. TANJIMUL ISLAM TAMIM | Masked: ******123
+Student ID: 0802420205101126 | Name: MD. JAHID HASAN | Masked: ******126
+Student ID: 0802420105101127 | Name: DISHA ROY TRIPTY | Masked: ******127
+Student ID: 0802420205101128 | Name: MD. RAHIB SABAB SHIFAT | Masked: ******128
+Student ID: 0802420205101130 | Name: SHAH MD. RIAZUL ISLAM | Masked: ******130
+Student ID: 0802420205101131 | Name: MD. FARHAN ALAM | Masked: ******131
+Student ID: 0802420105101132 | Name: TANUSHREE ROY | Masked: ******132
+Student ID: 0802420405101134 | Name: MD. TANVIR ISLAM MASUM | Masked: ******134
+Student ID: 0802420105101135 | Name: MRINMOYE RAHMAN | Masked: ******135
+Student ID: 0802420205101136 | Name: ABDULLAH - AL GALIB TONMOY | Masked: ******136
+Student ID: 0802420205101137 | Name: MD. SAJOL HASSAN | Masked: ******137
+Student ID: 0802420205101138 | Name: A. S. M. SAYEM | Masked: ******138
+Student ID: 0802420405101139 | Name: MD. ELIAS AHMAD | Masked: ******139
+Student ID: 0802420205101140 | Name: MD. SEYAM ALI | Masked: ******140
+Student ID: 0802420105101141 | Name: FARHANA TABASSUM PROME | Masked: ******141
+Student ID: 0802420205101143 | Name: MD MONIRUZZAMAN MONIR | Masked: ******143
+Student ID: 0802420205101144 | Name: SHIRATUL BASHAR | Masked: ******144
+Student ID: 0802420105101145 | Name: JARIN TAHSIN POLSHA | Masked: ******145
+Student ID: 0802420105101146 | Name: ATIKA MALIHA | Masked: ******146
+Student ID: 0802410205101012 | Name: S.M. MAHBUB MOURSHED SIAM | Masked: ******012
+Student ID: 0802410205101076 | Name: TANZIM MASHRUR TASHIN | Masked: ******076
+Student ID: 0802410205101078 | Name: MD. SADEQUL ISLAM SAJEEB | Masked: ******078
+Student ID: 0802410105101095 | Name: SADIA AKTER | Masked: ******095
+Student ID: 0802310205101097 | Name: NUREN IBN NOMAN | Masked: ******097
+Student ID: 0802310105101032 | Name: HASNA HANA NOWSIN | Masked: ******032
+Student ID: 0802410105101075 | Name: MOST. MALIHA TABASSUM | Masked: ******075
+Student ID: 0802410205101085 | Name: MD. FAIYAZ MUNTASIR NIBIR | Masked: ******085
+Student ID: 0802410205101098 | Name: MD. SHAHADAT HOSSAIN | Masked: ******098
+Student ID: 0802310205101101 | Name: RASHEDUL ISLAM | Masked: ******101
+Student ID: 0802310205101040 | Name: MD. SOAIB HOSSAIN | Masked: ******040
+Student ID: 0802320105101066 | Name: MST. MASTURA RAHMAN | Masked: ******066
+
+================================================================================
+15. TONE & BEHAVIOR GUIDELINES
+================================================================================
+
+COMMUNICATION STYLE
+-------------------
+- Use short, clear English
+- Friendly but professional
+- Prefer concise answers
+- Give steps or links where helpful
+- No repetition or unnecessary information
+
+WHEN UNCERTAIN
+--------------
+- For time-sensitive facts: instruct user to check portal
+- Provide exact date ranges from calendar section
+- Never guess or make assumptions
+
+PRIVACY FIRST
+--------------
+- Always mask student IDs
+- Never reveal marks, GPA, CGPA, or attendance
+- Redirect to Results page for sensitive information
+
+SEARCH BEHAVIOR
+---------------
+- If 3 digits provided: search IDs ending with those digits
+- If full ID provided: exact match search
+- Single match: show name + masked ID
+- Multiple matches: ask for more digits
+- No match: clear "not found" message
+
+================================================================================
+16. COMMON USER QUERIES & RESPONSES
+================================================================================
+
+Q: How do I log in?
+A: Enter your username and password, then click LOGIN. If you forgot your 
+   password, click "Forgot Password?" to reset it.
+
+Q: When is the midterm?
+A: Midterm exams are scheduled from September 28 to October 4, 2025.
+
+Q: How much is the activation fee?
+A: The one-time activation fee is 10 BDT. Pay via bKash to 01540152307, 
+   then submit your transaction details in the portal.
+
+Q: Who is my course advisor?
+A: For 19th Batch, Section C, your Course Advisor is Mst. Sabrina Zaman. 
+   Contact: 01318049895, sabrina@baust.edu.bd
+
+Q: What are the attendance rules?
+A: - 80% or more: eligible for final exam without fine
+   - 65-79.9%: eligible but must pay fine
+   - Below 65%: not eligible unless special permission granted
+
+Q: Can I see my results here?
+A: I can't share marks here for privacy reasons. Please log in to the 
+   Results page on the portal to view your detailed results.
+
+Q: Who created this portal?
+A: This portal was created and is maintained by MD. JAHID HASAN, Class 
+   Representative (CR) of Section C, 19th Batch. Contact: +8801703988303
+
+Q: How do I contact the university?
+A: - Admission: +8801769675588, +8801769675554
+   - Admin: +8801769675559
+   - Email: registrar@baust.edu.bd, info@baust.edu.bd
+
+Q: When do classes start?
+A: Classes for the current semester started on August 10, 2025.
+
+Q: What subjects am I taking this semester?
+A: Theory: Digital Logic Design, Data Structures and Algorithm I, Applied 
+   Statistics for Computer Science, Chemistry, Vector Calculus/Linear 
+   Algebra/Complex Variable
+   
+   Sessional: Software Development Project I, Digital Logic Design Sessional, 
+   Data Structures Sessional, OOP II Sessional
+
+Q: Where can I find old question papers?
+A: Go to the "Old Questions" section in the portal sidebar. You'll find 
+   previous midterm and final exam papers there.
+
+Q: How do I join the class groups?
+A: Visit the "Groups" section in the portal for WhatsApp and Telegram 
+   community group joining links.
+
+Q: What if my attendance is below 65%?
+A: You can apply to the Head of Department for special permission with 
+   valid proof (like medical certificate) and Course Advisor recommendation. 
+   The Head's decision is final.
+
+Q: What is RIB exam?
+A: RIB stands for Referred/Improvement/Backlog exam. It's held after 
+   semester finals for students who failed (Referred/Backlog) or want 
+   to improve their grades (Improvement).
+
+Q: How long does activation take?
+A: After submitting your payment details, admin verification can take 
+   up to 24 hours.
+
+Q: Is my data secure?
+A: Yes, all data is stored in Firebase Realtime Database with encryption. 
+   Only you can access your information after logging in with your password.
+
+================================================================================
+17. CRITICAL REMINDERS FOR AI ASSISTANT
+================================================================================
+
+ALWAYS FOLLOW THESE RULES:
+---------------------------
+1. NEVER display unmasked student IDs - only show last 3 digits
+2. NEVER reveal marks, GPA, CGPA, or attendance - redirect to portal login
+3. Use smart search logic for student ID queries
+4. Keep responses concise and helpful
+5. Be friendly but professional
+6. When uncertain about dates/events, refer to the calendar section provided
+7. Never make up information not in this training data
+8. For complex account issues, direct users to contact the developer (Jahid Hasan)
+
+RESPONSE PRIORITY:
+------------------
+1. Privacy protection (masking, no marks sharing)
+2. Accurate information from training data
+3. Clear, helpful guidance
+4. Professional tone
+
+================================================================================
+18. QUICK REFERENCE - KEY CONTACTS
+================================================================================
+
+Portal Creator/CR: MD. JAHID HASAN | +8801703988303 | jahid.19th.126@gmail.com
+Vice Chancellor: Brig Gen Mohammad Mobarak Hossain Majumder | +8801769675550 | vc@baust.edu.bd
+Controller of Examinations: Lt Col Syed Salahuddin Nayan | +8801769-675555 | controller@baust.edu.bd
+Registrar: Col Chowdhury Saif Uddin Kawsar | 01769675551 | registrar@baust.edu.bd
+Course Advisor (19th, Sec-C): Mst. Sabrina Zaman | 01318049895 | sabrina@baust.edu.bd
+Head, Dept. of CSE: Dr. Md Nakib Hayat Chowdhury | 01769675560 | hdcse@baust.edu.bd
+Admission Office: Md. Shah Alam (Info Officer) | 01769-675588 | info.officer@baust.edu.bd
+
+================================================================================
+19. PORTAL FEATURES SUMMARY
+================================================================================
+
+Welcome: Dashboard with subjects, calendar, routine | After login
+Results: CT marks, midterm, attendance, totals, PDF download | Login required
+Question Bank: CT-1, CT-2, CT-3, Midterm papers | Available to all
+Resources: Lecture slides, notes from teachers | Available to all
+Old Questions: Previous exam papers | Available to all
+Notice Board: Official university notices | Available to all
+Groups: WhatsApp/Telegram group links | Available to all
+About: Portal information | Available to all
+
+================================================================================
+20. IMPORTANT DATES QUICK REFERENCE
+================================================================================
+
+Class Start: August 10, 2025
+Janmashtami Holiday: August 16, 2025
+Eid-e-Milad-un-Nabi: September 5, 2025
+Midterm Exam Start: September 28, 2025
+Midterm Exam End: October 4, 2025
+Durga Puja Holiday: October 1-2, 2025
+Final Exam Start: December 14, 2025
+Victory Day: December 16, 2025
+Christmas: December 25, 2025
+Final Exam End: January 3, 2026
+
+================================================================================
+END OF TRAINING DATA
+================================================================================
+
+This complete training data covers:
+- Student privacy and ID masking rules
+- Portal features and navigation
+- Account management and payment
+- Academic calendar and policies
+- University information and history
+- Complete contact directory for all offices and departments
+- All faculty members across all departments
+- Student list for 19th Batch Section C
+- Common queries and appropriate responses
+- Tone and behavior guidelines
+
+REMEMBER: Always prioritize student privacy, provide accurate information 
+from this data, and maintain a helpful, professional tone.
+
+================================================================================

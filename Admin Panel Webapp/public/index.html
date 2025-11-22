@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>University Portal | Admin Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="admin_side.css?v=1.3">
+</head>
+<body>
+    <!-- Login View -->
+    <div id="loginView" class="hidden">
+        <svg class="login-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2L1 9l4 1.5V17a1 1 0 001 1h12a1 1 0 001-1v-6.5L23 9zM12 4.43l6 2.72V16h-3v-4a1 1 0 00-1-1H10a1 1 0 00-1 1v4H6V7.15zM14 16v-3h-4v3h4z"/>
+        </svg>
+        <div class="login-header">
+            <h1>University Portal</h1>
+            <p>Administrative Dashboard Access</p>
+        </div>
+        
+        <div class="form-group">
+            <label for="adminEmail">Email Address</label>
+            <input type="email" id="adminEmail" placeholder="Enter your email address">
+        </div>
+        
+        <div class="form-group">
+            <label for="adminPassword">Password</label>
+            <div class="password-wrapper">
+                <input type="password" id="adminPassword" placeholder="Enter your password">
+                <svg id="passwordToggleIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.432 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+            </div>
+        </div>
+        
+        <button id="loginBtn" class="btn btn-primary btn-full">
+            <span>Sign In to Dashboard</span>
+        </button>
+        
+    </div>
+    
+    <!-- Dashboard View -->
+    <div id="dashboardView" class="container hidden">
+        <div class="dashboard-header">
+            <div class="dashboard-title">
+                <h1 id="dashboardTitle">Dashboard</h1>
+                <span class="user-badge" id="userRoleBadge">Loading...</span>
+            </div>
+            <button id="logoutBtn" class="btn btn-danger">
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z"/>
+                    <path d="m10.5 8.5l-3-3a.5.5 0 1 1 .707-.707L10.793 7.5H1.5a.5.5 0 0 1 0-1h9.293L8.207 3.854a.5.5 0 0 1 .707-.707l3 3a.5.5 0 0 1 0 .707z"/>
+                </svg>
+                <span>Sign Out</span>
+            </button>
+        </div>
+        
+        <!-- Super Admin View -->
+        <div id="superAdminView" class="hidden">
+            
+            <!-- Card 1: Class Management -->
+            <div class="admin-card">
+                <div class="card-header">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443a55.381 55.381 0 015.25 2.882V15" /></svg>
+                    <h3>Class Management</h3>
+                </div>
+                
+                <p>Create and manage academic classes for the university portal.</p>
+                <form id="addClassForm" class="form-vertical">
+                    <div class="form-group">
+                        <label>Class Identifier (e.g., 20th-batch-a)</label>
+                        <input type="text" id="classIdInput" placeholder="Enter unique class ID" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Class Display Name (e.g., 20th Batch - Section A)</label>
+                        <input type="text" id="classNameInput" placeholder="Enter unique class name" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success btn-full">
+                            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg>
+                            <span>Create New Class</span>
+                        </button>
+                    </div>
+                </form>
+                
+                <h5>Existing Classes</h5>
+                <p>Select a class to manage its courses, content, and settings.</p>
+                <ul id="allClassesList" class="item-list"></ul>
+            </div>
+
+            <!-- Card 2: Representative Management -->
+            <div class="admin-card">
+                 <div class="card-header">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m-7.5-2.962A3.375 3.375 0 0110.5 12h3c1.41 0 2.7.64 3.562 1.708M18 18.72A3.375 3.375 0 0016.5 18h-9a3.375 3.375 0 00-1.5-1.047M12 15.75A3.375 3.375 0 0110.5 18h3a3.375 3.375 0 011.5-2.25m-7.5 0a3.375 3.375 0 00-1.5 2.25M12 11.25a3.375 3.375 0 00-3.375 3.375m6.75 0a3.375 3.375 0 00-3.375-3.375M12 3.75a3.375 3.375 0 00-3.375 3.375m6.75 0a3.375 3.375 0 00-3.375-3.375m-6.75 0a3.375 3.375 0 00-1.5 2.25m3.375-3.375a3.375 3.375 0 011.5-2.25m-1.5 2.25a3.375 3.375 0 01-1.5 2.25m0 0a3.375 3.375 0 01-1.5-2.25m0 0a3.375 3.375 0 00-1.5 2.25m7.5-7.5a3.375 3.375 0 00-3.375-3.375M12 3.75a3.375 3.375 0 013.375 3.375m-6.75 0a3.375 3.375 0 013.375-3.375m-3.375 3.375a3.375 3.375 0 01-3.375 3.375m0 0a3.375 3.375 0 013.375-3.375m0 0a3.375 3.375 0 01-3.375 3.375" /></svg>
+                    <h3>Representative Management</h3>
+                </div>
+                
+                <p>Assign and manage Class Representatives (CRs) for each academic class.</p>
+                <form id="addCrForm" class="form-vertical">
+                    <div class="form-group">
+                        <label>CR's Authentication UID</label>
+                        <input type="text" id="crUidInput" placeholder="Firebase Auth UID" required>
+                    </div>
+                    <div class="form-group">
+                        <label>CR's Full Name</label>
+                        <input type="text" id="crNameInput" placeholder="Enter CR name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Assigned Class ID</label>
+                        <input type="text" id="crClassIdInput" placeholder="Enter class identifier" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/></svg>
+                            <span>Add/Update Class Representative</span>
+                        </button>
+                    </div>
+                </form>
+                
+                <h5>Current Class Representatives</h5>
+                <ul id="crList" class="item-list"></ul>
+            </div>
+
+            <!-- Pending Payments Card (Super Admin Only) -->
+            <div id="pendingPaymentsCard" class="admin-card hidden">
+                <div class="card-header">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15A2.25 2.25 0 002.25 6.75v10.5A2.25 2.25 0 004.5 19.5z" /></svg>
+                    <h3>Pending Payment Approvals</h3>
+                </div>
+                <p>Review and approve student payments to activate their accounts.</p>
+                <ul id="pendingPaymentsList" class="item-list"></ul>
+            </div>
+        </div>
+        
+        <!-- Class Content Management View (Tabs and Panels) -->
+        <div id="classContentView">
+            <div class="nav-breadcrumb">
+                <button id="backToClassListBtn" class="btn btn-secondary btn-sm hidden">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/></svg>
+                    <span>Back to Class List</span>
+                </button>
+            </div>
+            
+            <h2 id="classContentTitle">Class Content Management</h2>
+
+            <div class="tabs" id="mainTabs">
+                <button class="tab-button active" data-view="courseListSection">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/></svg>
+                    <span>Course Management</span>
+                </button>
+                <button class="tab-button" data-view="generalContentSection">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/><path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/></svg>
+                    <span>General Content</span>
+                </button>
+                <button class="tab-button" data-view="resultsSection">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M16 8.5a.5.5 0 0 0-.5-.5h-15a.5.5 0 0 0 0 1h15a.5.5 0 0 0 .5-.5zM1.464 5.464a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708zm5-2a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708z"/></svg>
+                    <span>Results Management</span>
+                </button>
+                 <button class="tab-button" data-view="studentManagementSection">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/></svg>
+                    <span>Student Management</span>
+                </button>
+                <button class="tab-button" id="paymentManagementTab" data-view="paymentManagementSection">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M1.5 3.5a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-2zM1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm13 4a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1h12z"/></svg>
+                   <span>Payment Management</span>
+               </button>
+                <button class="tab-button" id="updateDistributionTab" data-view="updateDistributionSection">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"/></svg>
+                    <span>Update Distribution</span>
+                </button>
+             </div>
+            
+            <!-- Course List Section -->
+            <div id="courseListSection" class="view-panel">
+                <div class="admin-card">
+                    <div class="card-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                        </svg>
+                        <h3>Academic Course Management</h3>
+                    </div>
+                    
+                    <form id="addCourseForm" class="form-grid">
+                        <div class="form-group">
+                            <label>Course Code</label>
+                            <input id="courseCode" placeholder="Enter course code" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Course Title</label>
+                            <input id="courseName" placeholder="Enter course title" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Course Type</label>
+                            <select id="courseType">
+                                <option value="theory">Theory Course</option>
+                                <option value="sessional">Sessional Course</option>
+                            </select>
+                        </div>
+                        <div class="form-group full-width">
+                            <button type="submit" class="btn btn-success btn-full">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                </svg>
+                                <span>Add New Course</span>
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <h5>Current Academic Courses</h5>
+                    <p>Manage existing courses, their content, and assignments.</p>
+                    <ul id="myCoursesList" class="item-list"></ul>
+                </div>
+            </div>
+
+            <!-- General Content Section -->
+            <div id="generalContentSection" class="view-panel hidden">
+                <!-- Class Routine Card -->
+                <div class="admin-card">
+                    <div class="card-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 005.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+                        </svg>
+                        <h3>Class Schedule & Routine</h3>
+                    </div>
+                    
+                    <form id="routineForm" class="form-grid">
+                        <div class="form-group full-width">
+                            <label>Class Routine Google Drive Link</label>
+                            <input type="url" id="routineLinkInput" placeholder="https://drive.google.com/..." required>
+                        </div>
+                        <div class="form-group full-width">
+                            <button class="btn btn-primary btn-full" type="submit">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M.5 9.9a.5.5 0 0 1 .5.4l1.5 1.5L8.5 4.5a.5.5 0 0 1 .8-.1l4.4 3a.5.5 0 0 1-.2.9H9a.5.5 0 0 1-.5-.5V5.707L2.354 2.146a.5.5 0 1 1 .708-.708l11 11a.5.5 0 0 1-.708.708L11.707 11.5H4.5a.5.5 0 0 1-.5-.5z"/>
+                                </svg>
+                                <span>Update Class Routine</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Academic Calendar Events Card -->
+                <div class="admin-card">
+                    <div class="card-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0h18" />
+                        </svg>
+                        <h3>Academic Calendar Events</h3>
+                    </div>
+                    
+                    <form id="addEventForm" class="form-grid">
+                        <div class="form-group">
+                            <label>Event Date</label>
+                            <input type="date" id="eventDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Event Title</label>
+                            <input id="eventTitle" placeholder="e.g., Mid-term Examination" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Event Category</label>
+                            <select id="eventType">
+                                <option value="notice">General Notice</option>
+                                <option value="exam">Examination</option>
+                                <option value="holiday">Holiday/Break</option>
+                                <option value="event">Academic Event</option>
+                            </select>
+                        </div>
+                        <div class="form-group full-width">
+                            <label>Event Description</label>
+                            <textarea id="eventDescription" rows="3" placeholder="Provide additional details about the event..."></textarea>
+                        </div>
+                        <div class="form-group full-width">
+                            <button class="btn btn-success btn-full" type="submit">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                </svg>
+                                <span>Add Calendar Event</span>
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <h5>Upcoming Events</h5>
+                    <ul id="eventsList" class="item-list"></ul>
+                </div>
+
+                <!-- Notice Board Card -->
+                <div class="admin-card">
+                    <div class="card-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+                        </svg>
+                        <h3>Class Notice Board</h3>
+                    </div>
+                    
+                    <form id="addNoticeForm" class="form-grid">
+                        <div class="form-group">
+                            <label>Notice Date</label>
+                            <input id="noticeDate" placeholder="e.g., September 15, 2025" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Notice Title</label>
+                            <input id="noticeTitle" placeholder="e.g., Assignment Submission Deadline" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <label>Notice Content</label>
+                            <textarea id="noticeContent" rows="4" placeholder="Write the detailed notice content here..." required></textarea>
+                        </div>
+                        <div class="form-group full-width">
+                            <button class="btn btn-warning btn-full" type="submit">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                                </svg>
+                                <span>Post Notice</span>
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <h5>Recent Notices</h5>
+                    <ul id="noticesList" class="item-list"></ul>
+                </div>
+
+                <!-- Old Question Bank Card -->
+                <div class="admin-card">
+                    <div class="card-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                        </svg>
+                        <h3>Previous Year Questions</h3>
+                    </div>
+                    
+                    <form id="addOldQuestionForm" class="form-grid">
+                        <div class="form-group">
+                            <label>Question Paper Title</label>
+                            <input id="oldQuestionTitle" placeholder="e.g., CSE 2103 Final 2024" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Google Drive File URL</label>
+                            <input type="url" id="oldQuestionUrl" placeholder="https://drive.google.com/..." required>
+                        </div>
+                        <div class="form-group full-width">
+                            <button class="btn btn-primary btn-full" type="submit">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                </svg>
+                                <span>Add Question Paper</span>
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <h5>Available Question Papers</h5>
+                    <ul id="oldQuestionsList" class="item-list"></ul>
+                </div>
+
+                <!-- Community Group Links Card -->
+                <div class="admin-card">
+                    <div class="card-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+                        </svg>
+                        <h3>Community</h3>
+                    </div>
+                    
+                    <form id="addGroupLinkForm" class="form-grid">
+                        <div class="form-group">
+                            <label>Group Name</label>
+                            <input id="groupLinkName" placeholder="e.g., Class WhatsApp Group" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Platform Type</label>
+                            <select id="groupLinkType">
+                                <option value="WhatsApp">WhatsApp</option>
+                                <option value="Telegram">Telegram</option>
+                                <option value="Facebook">Facebook</option>
+                                <option value="Discord">Discord</option>
+                            </select>
+                        </div>
+                        <div class="form-group full-width">
+                            <label>Group Link</label>
+                            <input type="url" id="groupLinkUrl" placeholder="https://..." required>
+                        </div>
+                        <div class="form-group full-width">
+                            <button class="btn btn-success btn-full" type="submit">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                </svg>
+                                <span>Add Community Link</span>
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <h5>Active Community Links</h5>
+                    <ul id="groupLinksList" class="item-list"></ul>
+                </div>
+
+                <!-- Course Advisors Card -->
+                <div class="admin-card">
+                    <div class="card-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <h3>Academic Advisors</h3>
+                    </div>
+                    
+                    <form id="addAdvisorForm" class="form-grid">
+                        <div class="form-group">
+                            <label>Teacher Name</label>
+                            <input id="advisorName" placeholder="Enter the Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Designation</label>
+                            <input id="advisorDesignation" placeholder="Enter the Designation" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Department</label>
+                            <input id="advisorDepartment" placeholder="Enter the Department" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Contact Number</label>
+                            <input id="advisorPhone" placeholder="Enter the Contact Number" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" id="advisorEmail" placeholder="Enter the Email" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <button class="btn btn-primary btn-full" type="submit">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                </svg>
+                                <span>Add Faculty Advisor</span>
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <h5>Current Faculty Advisors</h5>
+                    <ul id="advisorsList" class="item-list"></ul>
+                </div>
+            </div>
+            
+             <!-- Results Management Section -->
+            <div id="resultsSection" class="view-panel hidden">
+                <div class="admin-card">
+                    <div class="card-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                           <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                        </svg>
+                        <h3>Student Results Management</h3>
+                    </div>
+                    <div class="form-group">
+                        <label for="resultsCourseSelect">Select a Theory Course to Manage Results</label>
+                        <select id="resultsCourseSelect">
+                            <option value="">-- Please select a course --</option>
+                        </select>
+                    </div>
+                    <div id="resultsTableContainer" style="margin-top: 2rem; overflow-x: auto;">
+                        <!-- Table will be injected here by JS -->
+                    </div>
+                    <button id="saveResultsBtn" class="btn btn-success btn-full hidden" style="margin-top: 2rem;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M2.5 8.016a.5.5 0 0 1 .5-.5h10.536a.5.5 0 0 1 .432.768L9.432 15.25a.5.5 0 0 1-.864 0L4.032 8.284a.5.5 0 0 1 .432-.768H13.5a.5.5 0 0 1 0 1H4.5a.5.5 0 0 1-.5-.5z"/>
+                            <path d="M.5 2.5A.5.5 0 0 1 1 2h14a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                        <span>Save All Results for This Course</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Student Management Section -->
+            <div id="studentManagementSection" class="view-panel hidden">
+                 <div class="admin-card">
+                    <div class="card-header">
+                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                           <path stroke-linecap="round" stroke-linejoin="round" d="M18 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zM4 19.235v-.11a6.375 6.375 0 0112.75 0v.109A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766z" />
+                        </svg>
+                        <h3>Student Management</h3>
+                    </div>
+                    <form id="addStudentForm" class="form-grid">
+                        <div class="form-group">
+                            <label for="studentIdInput">Student ID</label>
+                            <input type="text" id="studentIdInput" placeholder="e.g., 0802420205101126" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="studentNameInput">Student Full Name</label>
+                            <input type="text" id="studentNameInput" placeholder="e.g., MD. JAHID HASAN" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="studentDeviceLimitInput">Max Device Limit</label>
+                            <input type="number" id="studentDeviceLimitInput" value="10" required>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="studentPaidStatus" checked>
+                            <label for="studentPaidStatus">Account is Paid/Active</label>
+                        </div>
+                            <div class="form-group full-width">
+                            <button type="submit" class="btn btn-success btn-full">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                </svg>
+                                <span>Add Student</span>
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <h5>Current Students in This Class</h5>
+                    <ul id="studentsList" class="item-list"></ul>
+                </div>
+            </div>
+            
+            <!-- Payment Management Section -->
+            <div id="paymentManagementSection" class="view-panel hidden">
+                <div class="admin-card">
+                    <div class="card-header">
+                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                           <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15A2.25 2.25 0 002.25 6.75v10.5A2.25 2.25 0 004.5 19.5z" />
+                        </svg>
+                        <h3>Pending Payment Approvals</h3>
+                    </div>
+                     <p>Review and approve student payments to activate their accounts.</p>
+                     <ul id="classPendingPaymentsList" class="item-list"></ul>
+                </div>
+            </div>
+            
+            <!-- NEW VIEW PANEL FOR UPDATE DISTRIBUTION -->
+            <div id="updateDistributionSection" class="view-panel hidden">
+                
+                <!-- Box 1: Automatic Updates -->
+                <div class="admin-card">
+                    <div class="card-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001a.75.75 0 01.75.752v4.5a.75.75 0 01-.75.75h-4.992a.75.75 0 01-.75-.75v-4.5a.75.75 0 01.75-.75z" /><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 14.25h4.992v-.001a.75.75 0 01.75.752v4.5a.75.75 0 01-.75.75H3.75a.75.75 0 01-.75-.75v-4.5a.75.75 0 01.75-.75z" /><path stroke-linecap="round" stroke-linejoin="round" d="M9.348 3.75h4.992v-.001a.75.75 0 01.75.752v4.5a.75.75 0 01-.75.75H9.348a.75.75 0 01-.75-.75v-4.5a.75.75 0 01.75-.75z" /></svg>
+                        <h3>1. Automatic Update Distribution</h3>
+                    </div>
+                    <p>This list automatically shows all recent changes. You can remove items you don't want to send. After sending, disposable items (Notices, Events) will be cleared from the main portal.</p>
+                    
+                    <h5>Updates Detected & Ready to Send</h5>
+                    <ul id="updatesToSendList" class="item-list">
+                        <!-- Updates will be dynamically loaded here -->
+                    </ul>
+                    
+                    <button id="sendAndClearUpdatesBtn" class="btn btn-primary btn-full" style="margin-top: 1.5rem;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"/></svg>
+                        <span>Send Updates & Clean Up</span>
+                    </button>
+                </div>
+
+                <!-- Box 2: Manual Notice -->
+                <div class="admin-card">
+                    <div class="card-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3-12v10.5a2.25 2.25 0 01-2.25 2.25h-13.5A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6h10.5A2.25 2.25 0 0118 8.25z" /></svg>
+                        <h3>2. Send a Custom Manual Notice</h3>
+                    </div>
+                    <p>Use this to send a direct, one-time notice to all students. This will not be saved to the portal's notice board.</p>
+                    
+                    <form id="manualNoticeForm" class="form-vertical">
+                        <div class="form-group">
+                            <label for="manualNoticeTitle">Notice Title</label>
+                            <input type="text" id="manualNoticeTitle" placeholder="e.g., Urgent Class Cancellation" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="manualNoticeContent">Notice Content</label>
+                            <textarea id="manualNoticeContent" rows="4" placeholder="Write the detailed notice here..." required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button id="sendManualNoticeBtn" type="submit" class="btn btn-success btn-full">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"/></svg>
+                                <span>Send Manual Notice</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Course Management Section (Now a separate view) -->
+        <div id="courseManagementSection" class="hidden">
+            <div class="nav-breadcrumb">
+                <button id="backToCoursesBtn" class="btn btn-secondary btn-sm">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                    </svg>
+                    <span>Back to Course List</span>
+                </button>
+            </div>
+            
+            <h2 id="managingCourseTitle">Course Management</h2>
+            
+            <!-- Teacher Information Card -->
+            <div class="admin-card">
+                <div class="card-header">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-4.663M12 12A3 3 0 1012 6a3 3 0 000 6z" />
+                    </svg>
+                    <h3>Course Instructor Information</h3>
+                </div>
+                
+                <div id="teacher1Section">
+                    <h5>Primary Instructor</h5>
+                    <form id="teacher1Form" class="form-grid">
+                        <div class="form-group">
+                            <label>Instructor Name</label>
+                            <input name="t1Name" placeholder="e.g., Dr. Jane Doe">
+                        </div>
+                        <div class="form-group">
+                            <label>Designation</label>
+                            <input name="t1Designation" placeholder="e.g., Professor">
+                        </div>
+                        <div class="form-group">
+                            <label>Department</label>
+                            <input name="t1Department" placeholder="e.g., CSE">
+                        </div>
+                        <div class="form-group">
+                            <label>Contact Phone</label>
+                            <input name="t1Phone" placeholder="e.g., +880 1234-567890">
+                        </div>
+                        <div class="form-group full-width">
+                            <button class="btn btn-primary btn-full" type="submit">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M.5 9.9a.5.5 0 0 1 .5.4l1.5 1.5L8.5 4.5a.5.5 0 0 1 .8-.1l4.4 3a.5.5 0 0 1-.2.9H9a.5.5 0 0 1-.5-.5V5.707L2.354 2.146a.5.5 0 1 1 .708-.708l11 11a.5.5 0 0 1-.708.708L11.707 11.5H4.5a.5.5 0 0 1-.5-.5z"/>
+                                </svg>
+                                <span>Save Primary Instructor Info</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div id="teacher2Section" class="hidden" style="border-top: 1px solid var(--border-light); margin-top: 2rem; padding-top: 2rem;">
+                    <h5>Secondary Instructor (for Sessional)</h5>
+                    <form id="teacher2Form" class="form-grid">
+                        <div class="form-group">
+                            <label>Instructor Name</label>
+                            <input name="t2Name" placeholder="e.g., Mr. John Smith">
+                        </div>
+                        <div class="form-group">
+                            <label>Designation</label>
+                            <input name="t2Designation" placeholder="e.g., Lecturer">
+                        </div>
+                        <div class="form-group">
+                            <label>Department</label>
+                            <input name="t2Department" placeholder="e.g., CSE">
+                        </div>
+                        <div class="form-group">
+                            <label>Contact Phone</label>
+                            <input name="t2Phone" placeholder="e.g., +880 1234-567891">
+                        </div>
+                        <div class="form-group full-width">
+                            <button class="btn btn-primary btn-full" type="submit">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M.5 9.9a.5.5 0 0 1 .5.4l1.5 1.5L8.5 4.5a.5.5 0 0 1 .8-.1l4.4 3a.5.5 0 0 1-.2.9H9a.5.5 0 0 1-.5-.5V5.707L2.354 2.146a.5.5 0 1 1 .708-.708l11 11a.5.5 0 0 1-.708.708L11.707 11.5H4.5a.5.5 0 0 1-.5-.5z"/>
+                                </svg>
+                                <span>Save Secondary Instructor Info</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Theory Course Sections -->
+            <div id="theoryCourseSections" class="hidden">
+                <!-- Course Resources -->
+                <div class="admin-card">
+                    <div class="card-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                        </svg>
+                        <h3>Course Learning Resources</h3>
+                    </div>
+                    
+                    <form id="addResourceForm" class="form-grid">
+                        <div class="form-group">
+                            <label>Resource Topic/Title</label>
+                            <input name="resourceTopic" placeholder="e.g., Chapter 1 - Introduction" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Resource URL</label>
+                            <input type="url" name="resourceUrl" placeholder="https://..." required>
+                        </div>
+                        <div class="form-group full-width">
+                            <button class="btn btn-success btn-full" type="submit">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                </svg>
+                                <span>Add Learning Resource</span>
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <h5>Available Resources</h5>
+                    <ul id="resourcesList" class="item-list"></ul>
+                </div>
+
+                <!-- Course Assignments -->
+                <div class="admin-card">
+                    <div class="card-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3-12v10.5a2.25 2.25 0 01-2.25 2.25h-13.5A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6h10.5A2.25 2.25 0 0118 8.25z" />
+                        </svg>
+                        <h3>Course Assignments & Tasks</h3>
+                    </div>
+                    
+                    <form id="addAssignmentForm" class="form-grid">
+                        <div class="form-group">
+                            <label>Assignment Name</label>
+                            <input name="assignmentName" placeholder="e.g., Assignment 1 - Arrays" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Submission Deadline (DD/MM/YYYY)</label>
+                            <input name="assignmentDate" placeholder="e.g., 25/09/2025" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <button class="btn btn-warning btn-full" type="submit">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                </svg>
+                                <span>Create Assignment</span>
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <h5>Current Assignments</h5>
+                    <ul id="assignmentsList" class="item-list"></ul>
+                </div>
+
+                <!-- CT & Midterm Questions -->
+                <div class="admin-card">
+                    <div class="card-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                        </svg>
+                        <h3>Examination Question Papers</h3>
+                    </div>
+                    
+                    <form id="ctForm" class="form-grid">
+                        <div class="form-group">
+                            <label>Class Test 1 (Drive Link)</label>
+                            <input type="url" name="ct1Url" placeholder="https://drive.google.com/...">
+                        </div>
+                        <div class="form-group">
+                            <label>Class Test 2 (Drive Link)</label>
+                            <input type="url" name="ct2Url" placeholder="https://drive.google.com/...">
+                        </div>
+                        <div class="form-group">
+                            <label>Class Test 3 (Drive Link)</label>
+                            <input type="url" name="ct3Url" placeholder="https://drive.google.com/...">
+                        </div>
+                        <div class="form-group">
+                            <label>Midterm Exam (Drive Link)</label>
+                            <input type="url" name="midtermUrl" placeholder="https://drive.google.com/...">
+                        </div>
+                        <div class="form-group full-width">
+                            <button class="btn btn-primary btn-full" type="submit">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M.5 9.9a.5.5 0 0 1 .5.4l1.5 1.5L8.5 4.5a.5.5 0 0 1 .8-.1l4.4 3a.5.5 0 0 1-.2.9H9a.5.5 0 0 1-.5-.5V5.707L2.354 2.146a.5.5 0 1 1 .708-.708l11 11a.5.5 0 0 1-.708.708L11.707 11.5H4.5a.5.5 0 0 1-.5-.5z"/>
+                                </svg>
+                                <span>Update Question Paper Links</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Sessional Course Sections -->
+            <div id="sessionalCourseSections" class="hidden">
+                <!-- Sessional Resources -->
+                <div class="admin-card">
+                    <div class="card-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+                        </svg>
+                        <h3>Lab Resources & Materials</h3>
+                    </div>
+                    
+                    <form id="sessionalAddResourceForm" class="form-grid">
+                        <div class="form-group">
+                            <label>Lab Topic/Title</label>
+                            <input name="sessionalResourceTopic" placeholder="e.g., Lab 1 - Basic Programming" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Resource URL</label>
+                            <input type="url" name="sessionalResourceUrl" placeholder="https://..." required>
+                        </div>
+                        <div class="form-group full-width">
+                            <button class="btn btn-success btn-full" type="submit">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                </svg>
+                                <span>Add Lab Resource</span>
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <h5>Available Lab Resources</h5>
+                    <ul id="sessionalResourcesList" class="item-list"></ul>
+                </div>
+
+                <!-- Sessional Assignments -->
+                <div class="admin-card">
+                    <div class="card-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.25-4.875c.376.023.75.05 1.124.08 1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0117.25 18.75h-10.5A2.25 2.25 0 014.5 16.5V6.108c0-1.135.845-2.098 1.976-2.192.374-.03.748-.057 1.124-.08M15 12.75a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                        <h3>Lab Assignments & Projects</h3>
+                    </div>
+                    
+                    <form id="sessionalAddAssignmentForm" class="form-grid">
+                        <div class="form-group">
+                            <label>Assignment Name</label>
+                            <input name="sessionalAssignmentName" placeholder="e.g., Lab Assignment 1" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Submission Deadline (DD/MM/YYYY)</label>
+                            <input name="sessionalAssignmentDate" placeholder="e.g., 30/09/2025" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <button class="btn btn-warning btn-full" type="submit">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                </svg>
+                                <span>Create Lab Assignment</span>
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <h5>Current Lab Assignments</h5>
+                    <ul id="sessionalAssignmentsList" class="item-list"></ul>
+                </div>
+
+                <!-- Lab Reports -->
+                <div class="admin-card">
+                    <div class="card-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25M9 16.5v.75m3-3V16.5m3-5.25V16.5m3-8.25V16.5m-9-3.75h6m-6 3h6m6 1.5v.75A2.25 2.25 0 0119.5 21h-15A2.25 2.25 0 012.25 18.75V8.25A2.25 2.25 0 014.5 6h15a2.25 2.25 0 012.25 2.25z" />
+                            </svg>
+                        <h3>Laboratory Report Schedule</h3>
+                    </div>
+                    
+                    <form id="addLabReportForm" class="form-grid">
+                        <div class="form-group">
+                            <label>Experiment Name</label>
+                            <input name="labExperimentName" placeholder="e.g., Data Structure Implementation" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Experiment Date (DD/MM/YYYY)</label>
+                            <input name="labExperimentDate" placeholder="e.g., 20/09/2025" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Report Submission Date (DD/MM/YYYY)</label>
+                            <input name="labSubmissionDate" placeholder="e.g., 27/09/2025" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <button class="btn btn-primary btn-full" type="submit">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                </svg>
+                                <span>Schedule Lab Report</span>
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <h5>Scheduled Lab Reports</h5>
+                    <ul id="labReportsList" class="item-list"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="toast-container"></div>
+    <script type="module" src="./admin_side.js?v=1.5"></script>
+</body>
+</html>

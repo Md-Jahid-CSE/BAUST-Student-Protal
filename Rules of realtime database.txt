@@ -1,0 +1,54 @@
+{
+  "rules": {
+    "superAdmins": {
+      ".read": "auth != null",
+      ".write": "auth != null && root.child('superAdmins').child(auth.uid).exists()"
+    },
+    "classAdmins": {
+      ".read": "auth != null",
+      ".write": "auth != null && root.child('superAdmins').child(auth.uid).exists()"
+    },
+    "classes": {
+      ".read": true,
+      "$classId": {
+        ".write": "auth != null && (root.child('superAdmins').child(auth.uid).exists() || (root.child('classAdmins').child(auth.uid).exists() && root.child('classAdmins').child(auth.uid).child('classId').val() === $classId))"
+      }
+    },
+    "students": {
+      ".read": true,
+      // Cloud Function এর মাধ্যমে classId দিয়ে student খোঁজার গতি বাড়ানোর জন্য এই ইনডেক্সটি জরুরি
+      ".indexOn": ["classId"],
+      "$studentId": {
+        // অ্যাডমিনরা ছাত্রদের ডেটা ডিলিট বা পরিবর্তন করতে পারবে
+        ".write": "auth != null && (root.child('superAdmins').child(auth.uid).exists() || root.child('classAdmins').child(auth.uid).exists())",
+        // নতুন ছাত্র রেজিস্ট্রেশনের জন্য কিছু ফিল্ডে লেখার অনুমতি
+        "username": { ".write": "!data.exists()" },
+        "password": { ".write": "!data.exists()" },
+        "email": { ".write": "!data.exists()" },
+        // ডিভাইস তথ্য যেকোনো সময় আপডেট করা যাবে
+        "devices": { ".write": true }
+      }
+    },
+    "usernames": {
+      ".read": true,
+      // নতুন ইউজারনেম শুধুমাত্র তখনই লেখা যাবে যখন এটি আগে থেকে না থাকে অথবা অ্যাডমিন পরিবর্তন করে
+      "$username":{
+        ".write": "!data.exists() || (auth != null && (root.child('superAdmins').child(auth.uid).exists() || root.child('classAdmins').child(auth.uid).exists()))"
+      }
+    },
+    "pendingPayments": {
+      ".read": "auth != null && (root.child('superAdmins').child(auth.uid).exists() || root.child('classAdmins').child(auth.uid).exists())",
+      "$studentId": {
+        ".write": "!data.exists() || (auth != null && (root.child('superAdmins').child(auth.uid).exists() || root.child('classAdmins').child(auth.uid).exists()))"
+      }
+    },
+    // নতুন আপডেট ডিস্ট্রিবিউশন এর জন্য রুলস
+    "pendingUpdates": {
+      "$classId": {
+        // শুধুমাত্র Super Admin অথবা ঐ ক্লাসের CR এই নোডের ডেটা দেখতে বা লিখতে পারবে
+        ".read": "auth != null && (root.child('superAdmins').child(auth.uid).exists() || (root.child('classAdmins').child(auth.uid).exists() && root.child('classAdmins').child(auth.uid).child('classId').val() === $classId))",
+        ".write": "auth != null && (root.child('superAdmins').child(auth.uid).exists() || (root.child('classAdmins').child(auth.uid).exists() && root.child('classAdmins').child(auth.uid).child('classId').val() === $classId))"
+      }
+    }
+  }
+}
